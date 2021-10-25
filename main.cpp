@@ -1,6 +1,10 @@
-#include <iostream>
+#include "TextEditorModel.h"
+#include "TextEditorRender.h"
+#include "TextEditorController.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    TextEditorModel model;
+    TextEditorRender render(&model);
+    TextEditorController controller(&render, &model);
+    controller.Run();
 }

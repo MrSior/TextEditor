@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TextEditor.dir/TextEditorController.cpp.o"
   "CMakeFiles/TextEditor.dir/TextEditorModel.cpp.o"
   "CMakeFiles/TextEditor.dir/TextEditorRender.cpp.o"
   "CMakeFiles/TextEditor.dir/main.cpp.o"

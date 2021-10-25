@@ -142,6 +142,33 @@ TextEditor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/build
 .PHONY : TextEditor/fast
 
+TextEditorController.o: TextEditorController.cpp.o
+
+.PHONY : TextEditorController.o
+
+# target to build an object file
+TextEditorController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/TextEditorController.cpp.o
+.PHONY : TextEditorController.cpp.o
+
+TextEditorController.i: TextEditorController.cpp.i
+
+.PHONY : TextEditorController.i
+
+# target to preprocess a source file
+TextEditorController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/TextEditorController.cpp.i
+.PHONY : TextEditorController.cpp.i
+
+TextEditorController.s: TextEditorController.cpp.s
+
+.PHONY : TextEditorController.s
+
+# target to generate assembly for a file
+TextEditorController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/TextEditorController.cpp.s
+.PHONY : TextEditorController.cpp.s
+
 TextEditorModel.o: TextEditorModel.cpp.o
 
 .PHONY : TextEditorModel.o
@@ -232,6 +259,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TextEditor"
+	@echo "... TextEditorController.o"
+	@echo "... TextEditorController.i"
+	@echo "... TextEditorController.s"
 	@echo "... TextEditorModel.o"
 	@echo "... TextEditorModel.i"
 	@echo "... TextEditorModel.s"

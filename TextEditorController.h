@@ -5,6 +5,16 @@
 #ifndef TEXTEDITOR_TEXTEDITORCONTROLLER_H
 #define TEXTEDITOR_TEXTEDITORCONTROLLER_H
 
+#include "TextEditorRender.h"
+#include "TextEditorModel.h"
+#include "SFML/Graphics.hpp"
 
+class TextEditorController{
+    TextEditorRender* m_render;
+    TextEditorModel* m_model;
+public:
+    TextEditorController(TextEditorRender* render, TextEditorModel* model);
+    void Run();
+};
 
 #endif //TEXTEDITOR_TEXTEDITORCONTROLLER_H

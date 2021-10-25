@@ -88,6 +88,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/TextEditorController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/TextEditorController.h">
 			<Option target="TextEditor"/>
 		</Unit>
