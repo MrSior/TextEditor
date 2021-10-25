@@ -169,6 +169,33 @@ TextEditorModel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/TextEditorModel.cpp.s
 .PHONY : TextEditorModel.cpp.s
 
+TextEditorRender.o: TextEditorRender.cpp.o
+
+.PHONY : TextEditorRender.o
+
+# target to build an object file
+TextEditorRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/TextEditorRender.cpp.o
+.PHONY : TextEditorRender.cpp.o
+
+TextEditorRender.i: TextEditorRender.cpp.i
+
+.PHONY : TextEditorRender.i
+
+# target to preprocess a source file
+TextEditorRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/TextEditorRender.cpp.i
+.PHONY : TextEditorRender.cpp.i
+
+TextEditorRender.s: TextEditorRender.cpp.s
+
+.PHONY : TextEditorRender.s
+
+# target to generate assembly for a file
+TextEditorRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/TextEditorRender.cpp.s
+.PHONY : TextEditorRender.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -208,6 +235,9 @@ help:
 	@echo "... TextEditorModel.o"
 	@echo "... TextEditorModel.i"
 	@echo "... TextEditorModel.s"
+	@echo "... TextEditorRender.o"
+	@echo "... TextEditorRender.i"
+	@echo "... TextEditorRender.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

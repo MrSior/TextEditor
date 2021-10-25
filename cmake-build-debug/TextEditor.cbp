@@ -88,10 +88,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/TextEditorController.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/TextEditorModel.cpp">
 			<Option target="TextEditor"/>
 		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/TextEditorModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/TextEditorRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/TextEditorRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/main.cpp">
