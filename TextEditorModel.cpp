@@ -89,6 +89,8 @@ void TextEditorModel::eraseSymbol() {
         linesText[current_line - 1] += linesText[current_line];
         linesText.erase(linesText.begin() + current_line);
         current_line--;
+        checkProtrudingPart();
+        current_cursor_position = linesText[current_line].length();
     } else if (current_cursor_position != 0){
         linesText[current_line].erase(linesText[current_line].begin() + current_cursor_position - 1);
         current_cursor_position--;

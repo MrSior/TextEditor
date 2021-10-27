@@ -35,7 +35,7 @@ void TextEditorRender::draw(sf::RenderTarget &target, sf::RenderStates states) c
 
     sf::RectangleShape cursor(sf::Vector2f(25, 45));
     cursor.setPosition(sf::Vector2f(m_model->getCurrentCursorPosition() * 22 + 58
-                                                + (numbersInNum(m_model->getCurrentLine() + 2) -1) * 22,
+                                                + (numbersInNum(m_model->getLineCount() + 1) - 1) * 22,
                                             m_model->getCurrentLine() * 45 + 5));
     cursor.setFillColor(sf::Color(66, 84, 90));
     target.draw(cursor);
@@ -59,7 +59,7 @@ void TextEditorRender::draw(sf::RenderTarget &target, sf::RenderStates states) c
         std::string line = m_model->getLine(i);
         sf::Text textLine = sf::Text(line, font, 35);
         textLine.setStyle(sf::Text::Bold);
-        textLine.setPosition(60 + (numbersInNum(m_model->getCurrentLine() + 2) -1) * 22, float (i) * 45);
+        textLine.setPosition(60 + (numbersInNum(m_model->getLineCount() + 1) - 1) * 22, float (i) * 45);
         target.draw(textLine);
     }
 }
