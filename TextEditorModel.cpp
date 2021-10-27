@@ -14,7 +14,8 @@ TextEditorModel::TextEditorModel() {
 void TextEditorModel::init() {
     current_line = 0;
     current_cursor_position = 0;
-    max_symbols_in_line = 70;
+    max_symbols_in_line = 47;
+    linesText.emplace_back("");
 }
 
 void TextEditorModel::DownloadSaveWithName(std::string fileName) {
@@ -50,7 +51,12 @@ void TextEditorModel::InsertLine(int pos, std::string line) {
 }
 
 void TextEditorModel::setCurrentLine(int currentLine) {
-    current_line = currentLine;
+    if(currentLine >= 0 && currentLine < linesText.size()) {
+        current_line = currentLine;
+        if(current_cursor_position > linesText[currentLine].length()){
+            current_cursor_position = linesText[currentLine].length();
+        }
+    }
 }
 
 int TextEditorModel::getCurrentLine() {
@@ -66,22 +72,23 @@ int TextEditorModel::getLineCount() {
 }
 
 void TextEditorModel::insertSymbol(char symbol) {
-    if (linesText[current_line].length() == max_symbols_in_line){
+    linesText[current_line].insert(linesText[current_line].begin() + current_cursor_position, symbol);
+    current_cursor_position++;
+    if (current_cursor_position == max_symbols_in_line){
         current_line++;
         current_cursor_position = 0;
-        if (current_line == linesText.size()){
+        if (current_line == linesText.size()) {
             linesText.emplace_back("");
         }
     }
-    linesText[current_line].insert(linesText[current_line].begin() + current_cursor_position, symbol);
-    current_cursor_position++;
+    checkProtrudingPart();
 }
 
 void TextEditorModel::eraseSymbol() {
     if (current_cursor_position == 0 && current_line > 0){
+        linesText[current_line - 1] += linesText[current_line];
+        linesText.erase(linesText.begin() + current_line);
         current_line--;
-        linesText[current_line].erase(linesText[current_line].begin() + current_cursor_position - 1);
-        current_cursor_position--;
     } else if (current_cursor_position != 0){
         linesText[current_line].erase(linesText[current_line].begin() + current_cursor_position - 1);
         current_cursor_position--;
@@ -92,17 +99,36 @@ void TextEditorModel::lineBreak() {
     std::string substr;
     substr = linesText[current_line].substr(current_cursor_position,
                                             linesText[current_line].length() - current_cursor_position + 1);
+    linesText[current_line].erase(current_cursor_position,
+                                   linesText[current_line].length() - current_cursor_position + 1);
     InsertLine(current_line + 1, substr);
     current_line++;
-    current_cursor_position = 0;
+    current_cursor_position = substr.length();
 }
 
-void TextEditorModel::changeCursorPosition(int pos) {
-    current_cursor_position = pos;
+void TextEditorModel::setCurrentCursorPosition(int pos) {
+    if (pos >= 0 && pos <= linesText[current_line].length()) {
+        current_cursor_position = pos;
+    }
 }
 
-int TextEditorModel::getCurrentCurosrPosition() {
+int TextEditorModel::getCurrentCursorPosition() {
     return current_cursor_position;
+}
+
+void TextEditorModel::checkProtrudingPart() {
+    int n = linesText.size();
+    for(int i = 0; i < n; i++){
+        std::string line = linesText[i];
+        if (line.length() > max_symbols_in_line){
+            char symbol = line[line.length() - 1];
+            linesText[i].pop_back();
+            if (i == n - 1){
+                linesText.emplace_back("");
+            }
+            linesText[i + 1].insert(linesText[i + 1].begin(), symbol);
+        }
+    }
 }
 
 

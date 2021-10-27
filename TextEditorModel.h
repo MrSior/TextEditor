@@ -26,8 +26,9 @@ public:
     void insertSymbol(char symbol);
     void eraseSymbol();
     void lineBreak();
-    void changeCursorPosition(int pos);
-    int getCurrentCurosrPosition();
+    void setCurrentCursorPosition(int pos);
+    void checkProtrudingPart();
+    int getCurrentCursorPosition();
     int getCurrentLine();
     std::string getLine(int n);
     int getLineCount();
