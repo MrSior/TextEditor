@@ -90,11 +90,11 @@ void TextEditorRender::draw(sf::RenderTarget &target, sf::RenderStates states) c
 }
 
 void TextEditorRender::checkCursorPosition(std::string keyPressed) {
-    if (keyPressed == "Enter") {
-        if (float(m_model->getCurrentLine() + 1) * 45 - y_scrolled > window_y) {
-            y_scrolled += window_y - 45;
-        }
-    }
+//    if (keyPressed == "Enter") {
+//        if (float(m_model->getCurrentLine() + 1) * 45 - y_scrolled > window_y) {
+//            y_scrolled += window_y - 45;
+//        }
+//    }
     if (keyPressed == "Backspace"){
         if (float(m_model->getCurrentLine() + 1) * 45 - y_scrolled < 45) {
             y_scrolled -= 90;
@@ -111,7 +111,7 @@ void TextEditorRender::checkCursorPosition(std::string keyPressed) {
             }
         }
     }
-    if (keyPressed == "Down"){
+    if (keyPressed == "Down" || keyPressed == "Enter"){
         if (float(m_model->getCurrentLine() + 1) * 45 - y_scrolled > window_y) {
             y_scrolled += 45;
         }

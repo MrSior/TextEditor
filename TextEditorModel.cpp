@@ -86,11 +86,17 @@ void TextEditorModel::insertSymbol(char symbol) {
 
 void TextEditorModel::eraseSymbol() {
     if (current_cursor_position == 0 && current_line > 0){
+        if(linesText[current_line - 1].length() == max_symbols_in_line){
+            linesText[current_line - 1].pop_back();
+        }
+        current_cursor_position = linesText[current_line - 1].length();
+        if (linesText[current_line - 1].length() == max_symbols_in_line){
+            current_cursor_position--;
+        }
         linesText[current_line - 1] += linesText[current_line];
         linesText.erase(linesText.begin() + current_line);
         current_line--;
         checkProtrudingPart();
-        current_cursor_position = linesText[current_line].length();
     } else if (current_cursor_position != 0){
         linesText[current_line].erase(linesText[current_line].begin() + current_cursor_position - 1);
         current_cursor_position--;
@@ -105,11 +111,22 @@ void TextEditorModel::lineBreak() {
                                    linesText[current_line].length() - current_cursor_position + 1);
     InsertLine(current_line + 1, substr);
     current_line++;
-    current_cursor_position = substr.length();
+    //current_cursor_position = substr.length();
+    current_cursor_position = 0;
 }
 
 void TextEditorModel::setCurrentCursorPosition(int pos) {
-    if (pos >= 0 && pos <= linesText[current_line].length()) {
+    if (linesText[current_line].length() == max_symbols_in_line
+        &&  linesText[current_line].length() - current_cursor_position < 2
+        && pos - 1 == current_cursor_position){
+        if (current_line != linesText.size() - 1) {
+            current_line++;
+            current_cursor_position = 0;
+        }
+    } else if (pos + 1 == current_cursor_position && current_cursor_position == 0 && current_line > 0){
+        current_line--;
+        current_cursor_position = linesText[current_line].length() - 1;
+    } else if (pos >= 0 && pos <= linesText[current_line].length()) {
         current_cursor_position = pos;
     }
 }
@@ -121,13 +138,13 @@ int TextEditorModel::getCurrentCursorPosition() {
 void TextEditorModel::checkProtrudingPart() {
     int n = linesText.size();
     for(int i = 0; i < n; i++){
-        std::string line = linesText[i];
-        if (line.length() > max_symbols_in_line){
+        std::string& line = linesText[i];
+        if (i == n - 1 && line.length() > max_symbols_in_line){
+            linesText.emplace_back("");
+        }
+        while (line.length() > max_symbols_in_line){
             char symbol = line[line.length() - 1];
             linesText[i].pop_back();
-            if (i == n - 1){
-                linesText.emplace_back("");
-            }
             linesText[i + 1].insert(linesText[i + 1].begin(), symbol);
         }
     }

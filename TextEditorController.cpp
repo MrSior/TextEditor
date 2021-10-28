@@ -5,6 +5,7 @@
 #include "TextEditorController.h"
 #include "SFML/Graphics.hpp"
 #include "iostream"
+#include "cmath"
 
 TextEditorController::TextEditorController(TextEditorRender *render, TextEditorModel *model) {
     m_model = model;
@@ -54,6 +55,18 @@ void TextEditorController::Run() {
                     } else{
                         if (m_render->getY_scrolled() < float(m_model->getLineCount() - 7) * 45 && m_model->getLineCount() > 15){
                             m_render->setY_scrolled(m_render->getY_scrolled() - event.mouseWheelScroll.delta * 1.5);
+                        }
+                    }
+                }
+                if (event.mouseWheelScroll.wheel == sf::Mouse::HorizontalWheel){
+                    //m_render->setX_scrolled(m_render->getX_scrolled() - event.mouseWheelScroll.delta * 1.5);
+                    if (event.mouseWheelScroll.delta > 0){
+                        if (m_render->getX_scrolled() > 0){
+                            m_render->setX_scrolled(m_render->getX_scrolled() - event.mouseWheelScroll.delta * 1.5);
+                        }
+                    }else{
+                        if (m_render->getX_scrolled() < std::ceil(log10(m_model->getLineCount() + 1) - 1) * 22){
+                            m_render->setX_scrolled(m_render->getX_scrolled() - event.mouseWheelScroll.delta * 1.5);
                         }
                     }
                 }
