@@ -56,6 +56,9 @@ void TextEditorModel::setCurrentLine(int currentLine) {
         if(current_cursor_position > linesText[currentLine].length()){
             current_cursor_position = linesText[currentLine].length();
         }
+    } else{
+        current_line = linesText.size() - 1;
+        current_cursor_position = linesText[currentLine].length();
     }
 }
 
@@ -116,9 +119,12 @@ void TextEditorModel::lineBreak() {
 }
 
 void TextEditorModel::setCurrentCursorPosition(int pos) {
-    if (linesText[current_line].length() == max_symbols_in_line
+    if (pos > linesText[current_line].length() + 1 && pos > current_cursor_position){
+        current_cursor_position = linesText[current_line].length();
+    }
+    else if ((linesText[current_line].length() == max_symbols_in_line
         &&  linesText[current_line].length() - current_cursor_position < 2
-        && pos - 1 == current_cursor_position){
+        && pos - 1 == current_cursor_position) || (pos == linesText[current_line].length() + 1)){
         if (current_line != linesText.size() - 1) {
             current_line++;
             current_cursor_position = 0;
@@ -126,6 +132,9 @@ void TextEditorModel::setCurrentCursorPosition(int pos) {
     } else if (pos + 1 == current_cursor_position && current_cursor_position == 0 && current_line > 0){
         current_line--;
         current_cursor_position = linesText[current_line].length() - 1;
+        if(current_cursor_position < 0){
+            current_cursor_position = 0;
+        }
     } else if (pos >= 0 && pos <= linesText[current_line].length()) {
         current_cursor_position = pos;
     }

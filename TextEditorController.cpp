@@ -50,11 +50,11 @@ void TextEditorController::Run() {
                 if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel){
                     if (event.mouseWheelScroll.delta > 0){
                         if (m_render->getY_scrolled() > 0){
-                            m_render->setY_scrolled(m_render->getY_scrolled() - event.mouseWheelScroll.delta * 1.5);
+                            m_render->setY_scrolled(m_render->getY_scrolled() - event.mouseWheelScroll.delta * 2);
                         }
                     } else{
                         if (m_render->getY_scrolled() < float(m_model->getLineCount() - 7) * 45 && m_model->getLineCount() > 15){
-                            m_render->setY_scrolled(m_render->getY_scrolled() - event.mouseWheelScroll.delta * 1.5);
+                            m_render->setY_scrolled(m_render->getY_scrolled() - event.mouseWheelScroll.delta * 2);
                         }
                     }
                 }
@@ -68,6 +68,17 @@ void TextEditorController::Run() {
                         if (m_render->getX_scrolled() < std::ceil(log10(m_model->getLineCount() + 1) - 1) * 22){
                             m_render->setX_scrolled(m_render->getX_scrolled() - event.mouseWheelScroll.delta * 1.5);
                         }
+                    }
+                }
+            }
+            if (event.type == sf::Event::MouseButtonPressed){
+                if (event.mouseButton.button == sf::Mouse::Left){
+                    if (event.mouseButton.x > std::ceil(log10(m_model->getLineCount() + 1) - 1) * 22 + 60 - m_render->getX_scrolled()) {
+                        int line = int(event.mouseButton.y + m_render->getY_scrolled()) / 45;
+                        int symbol = int(event.mouseButton.x + m_render->getX_scrolled()
+                                         - std::ceil(log10(m_model->getLineCount() + 1) - 1) * 22 - 60) / 22;
+                        m_model->setCurrentLine(line);
+                        m_model->setCurrentCursorPosition(symbol);
                     }
                 }
             }
