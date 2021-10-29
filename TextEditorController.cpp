@@ -45,6 +45,9 @@ void TextEditorController::Run() {
                     m_render->checkCursorPosition("Backspace");
                     systemKeyPressed = true;
                 }
+                if (event.key.code == sf::Keyboard::Tab){
+                    systemKeyPressed = true;
+                }
             }
             if (event.type == sf::Event::MouseWheelScrolled){
                 if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel){
@@ -81,6 +84,14 @@ void TextEditorController::Run() {
                         m_model->setCurrentCursorPosition(symbol);
                     }
                 }
+            }
+            if (event.type == sf::Event::Resized) {
+                sf::Vector2f windowSize = m_render->getWindowSize();
+                int prev_max_symbols_in_line = m_model->getMaxSymbolsInLine();
+                m_render->changeWindowSize(event.size.width, event.size.height);
+                m_model->changeMaxSymbolsInLine(event.size.width);
+                m_model->resetLines(m_render->getWindowSize().x < windowSize.x, prev_max_symbols_in_line);
+                m_render->setY_scrolled(m_render->getY_scrolled() - (windowSize.y - m_render->getWindowSize().y));
             }
             if (event.type == sf::Event::TextEntered){
                 //std::cout << char(event.text.unicode) <<'\n';

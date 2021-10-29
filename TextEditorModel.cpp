@@ -51,6 +51,7 @@ void TextEditorModel::InsertLine(int pos, std::string line) {
 }
 
 void TextEditorModel::setCurrentLine(int currentLine) {
+    if (currentLine < 0) return;
     if(currentLine >= 0 && currentLine < linesText.size()) {
         current_line = currentLine;
         if(current_cursor_position > linesText[currentLine].length()){
@@ -146,7 +147,7 @@ int TextEditorModel::getCurrentCursorPosition() {
 
 void TextEditorModel::checkProtrudingPart() {
     int n = linesText.size();
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < linesText.size(); i++){
         std::string& line = linesText[i];
         if (i == n - 1 && line.length() > max_symbols_in_line){
             linesText.emplace_back("");
@@ -157,6 +158,54 @@ void TextEditorModel::checkProtrudingPart() {
             linesText[i + 1].insert(linesText[i + 1].begin(), symbol);
         }
     }
+}
+
+void TextEditorModel::changeMaxSymbolsInLine(int width) {
+    max_symbols_in_line = (width - 60) / 22;
+}
+
+void TextEditorModel::resetLines(bool isWindowSmaller, int prev_max_symbols_in_line) {
+    if (isWindowSmaller){
+        //TextEditorModel::checkProtrudingPart();
+        int n = linesText.size();
+        for(int i = 0; i < linesText.size(); i++){
+            std::string& line = linesText[i];
+            if (i == n - 1 && line.length() > max_symbols_in_line){
+                linesText.emplace_back("");
+            }
+            else if (line.length() > max_symbols_in_line && linesText[i + 1].length() < max_symbols_in_line){
+                linesText.insert(linesText.begin() + i + 1, "");
+                //linesText.emplace_back("");
+            }
+            while (line.length() > max_symbols_in_line){
+                char symbol = line[line.length() - 1];
+                linesText[i].pop_back();
+                linesText[i + 1].insert(linesText[i + 1].begin(), symbol);
+            }
+        }
+        TextEditorModel::checkProtrudingPart();
+    } else{
+        for(int i = 1; i < linesText.size(); i++){
+            if (linesText[i - 1].length() == prev_max_symbols_in_line){
+                linesText[i - 1] += linesText[i];
+                if (linesText[i - 1].length() < max_symbols_in_line){
+                    TextEditorModel::EraseLine(i);
+                } else{
+                    linesText[i] = "";
+                }
+                TextEditorModel::checkProtrudingPart();
+            }
+        }
+    }
+    TextEditorModel::setCurrentCursorPosition(0);
+    if (current_line >= linesText.size()){
+        current_line = linesText.size() - 1;
+    }
+    TextEditorModel::checkProtrudingPart();
+}
+
+int TextEditorModel::getMaxSymbolsInLine() {
+    return max_symbols_in_line;
 }
 
 

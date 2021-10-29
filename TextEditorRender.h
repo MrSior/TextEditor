@@ -21,12 +21,14 @@ public:
 
     void Init();
     void Render();
+    sf::Vector2f getWindowSize();
     float getX_scrolled();
     float getY_scrolled();
     void setX_scrolled(float value);
     void setY_scrolled(float value);
     void checkCursorPosition(std::string keyPressed);
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    void changeWindowSize(int width, int height);
 };
 
 #endif //TEXTEDITOR_TEXTEDITORRENDER_H

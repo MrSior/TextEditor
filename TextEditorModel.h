@@ -30,8 +30,11 @@ public:
     void checkProtrudingPart();
     int getCurrentCursorPosition();
     int getCurrentLine();
+    int getMaxSymbolsInLine();
     std::string getLine(int n);
     int getLineCount();
+    void changeMaxSymbolsInLine(int new_width);
+    void resetLines(bool isWindowSmaller, int prev_max_symbols_in_line);
 };
 
 #endif //TEXTEDITOR_TEXTEDITORMODEL_H

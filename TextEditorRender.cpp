@@ -17,7 +17,7 @@ void TextEditorRender::Init() {
     y_scrolled = 0;
     window_x = 1100;
     window_y = 700;
-    m_window.create(sf::VideoMode(window_x, window_y), "Text Editor", sf::Style::Close | sf::Style::Titlebar);
+    m_window.create(sf::VideoMode(window_x, window_y), "Text Editor"/*, sf::Style::Close | sf::Style::Titlebar*/);
     font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
     //font.loadFromFile("/Users/simonchubenko/Documents/C++/text-editor/fonts/DejaVuSansMono.ttf");
 }
@@ -37,10 +37,16 @@ float TextEditorRender::getY_scrolled() {
 }
 
 void TextEditorRender::setX_scrolled(float value) {
+    if (value < 0){
+        value = 0;
+    }
     x_scrolled = value;
 }
 
 void TextEditorRender::setY_scrolled(float value) {
+    if (value < 0){
+        value = 0;
+    }
     y_scrolled = value;
 }
 
@@ -117,5 +123,15 @@ void TextEditorRender::checkCursorPosition(std::string keyPressed) {
             y_scrolled += 45;
         }
     }
+}
+
+void TextEditorRender::changeWindowSize(int width, int height) {
+    window_x = width;
+    window_y = height;
+    m_window.create(sf::VideoMode(window_x, window_y), "Text Editor"/*, sf::Style::Close | sf::Style::Titlebar*/);
+}
+
+sf::Vector2f TextEditorRender::getWindowSize() {
+    return sf::Vector2f(window_x, window_y);
 }
 
