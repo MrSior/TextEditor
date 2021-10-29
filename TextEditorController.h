@@ -12,6 +12,7 @@
 class TextEditorController{
     TextEditorRender* m_render;
     TextEditorModel* m_model;
+    bool is_command_pressed;
 public:
     TextEditorController(TextEditorRender* render, TextEditorModel* model);
     void Run();

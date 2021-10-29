@@ -19,9 +19,10 @@ void TextEditorModel::init() {
 }
 
 void TextEditorModel::DownloadSaveWithName(std::string fileName) {
-    std::ifstream input ("Saves/" + fileName + ".txt");
+    std::ifstream input ("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + fileName + ".txt");
     if (!input.is_open()){
         std::cout << "ERROR: file with name " + fileName + " can't be open" << std::endl;
+        return;
     }
     std::string line;
     while (std::getline(input, line)){
@@ -31,11 +32,8 @@ void TextEditorModel::DownloadSaveWithName(std::string fileName) {
 }
 
 void TextEditorModel::SaveCurrentText(std::string name) {
-    std::filesystem::path path("Saves/");
-    path /= name + "/.txt";
-    std::filesystem::create_directories(path.parent_path());
-
-    std::ofstream output(path);
+    std::ofstream output;
+    output.open(("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + name + ".txt"));
     for(const std::string& line : linesText){
         output << line << std::endl;
     }

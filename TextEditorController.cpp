@@ -10,6 +10,7 @@
 TextEditorController::TextEditorController(TextEditorRender *render, TextEditorModel *model) {
     m_model = model;
     m_render = render;
+    is_command_pressed = false;
 }
 
 void TextEditorController::Run() {
@@ -47,6 +48,15 @@ void TextEditorController::Run() {
                 }
                 if (event.key.code == sf::Keyboard::Tab){
                     systemKeyPressed = true;
+                }
+                if (event.key.code == sf::Keyboard::LSystem){
+                    is_command_pressed = true;
+                }
+                if (event.key.code == sf::Keyboard::S && is_command_pressed){
+                    is_command_pressed = false;
+                    std::string name;
+                    std::cin >> name;
+                    m_model->SaveCurrentText(name);
                 }
             }
             if (event.type == sf::Event::MouseWheelScrolled){
