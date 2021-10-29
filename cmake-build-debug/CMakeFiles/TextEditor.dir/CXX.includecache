@@ -46,6 +46,14 @@ SFML/Graphics.hpp
 TextEditorModel.h
 /Users/simonchubenko/Documents/C++/TextEditor/TextEditorModel.h
 
+/Users/simonchubenko/Documents/C++/TextEditor/main.cpp
+TextEditorModel.h
+/Users/simonchubenko/Documents/C++/TextEditor/TextEditorModel.h
+TextEditorRender.h
+/Users/simonchubenko/Documents/C++/TextEditor/TextEditorRender.h
+TextEditorController.h
+/Users/simonchubenko/Documents/C++/TextEditor/TextEditorController.h
+
 /usr/local/include/SFML/Config.hpp
 TargetConditionals.h
 /usr/local/include/SFML/TargetConditionals.h
