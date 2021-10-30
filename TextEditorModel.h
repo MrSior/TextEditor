@@ -14,6 +14,7 @@ private:
     int current_line;
     int current_cursor_position;
     int max_symbols_in_line;
+    std::string file_name;
 public:
     TextEditorModel();
     void init();

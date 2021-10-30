@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o"
+  "/Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuModel.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o"
+  "/Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuRender.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/TextEditorController.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/TextEditorController.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/TextEditorModel.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/TextEditorModel.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/TextEditorRender.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/TextEditorRender.cpp.o"

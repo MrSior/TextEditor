@@ -56,12 +56,12 @@ int numbersInNum(int a){
 
 void TextEditorRender::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
-    sf::View view = target.getDefaultView();
-    float scene_x = view.getSize().x + float(numbersInNum(m_model->getLineCount() + 1) - 1) * 22;
-    float scene_y = float(m_model->getLineCount() * 45) + 700;
-    view.setSize(scene_x, scene_y);
-    view.setCenter(scene_x / 2 - 44, 350);
-    view.zoom(700 / scene_y);
+//    sf::View view = target.getDefaultView();
+//    float scene_x = view.getSize().x + float(numbersInNum(m_model->getLineCount() + 1) - 1) * 22;
+//    float scene_y = float(m_model->getLineCount() * 45) + 700;
+//    view.setSize(scene_x, scene_y);
+//    view.setCenter(scene_x / 2 - 44, 350);
+//    view.zoom(700 / scene_y);
     //target.setView(view);
 
 

@@ -4,6 +4,9 @@
 
 #include "TextEditorController.h"
 #include "SFML/Graphics.hpp"
+#include "SaveMenu/SaveMenuController.h"
+#include "SaveMenu/SaveMenuRender.h"
+#include "SaveMenu/SaveMenuModel.h"
 #include "iostream"
 #include "cmath"
 
@@ -54,9 +57,13 @@ void TextEditorController::Run() {
                 }
                 if (event.key.code == sf::Keyboard::S && is_command_pressed){
                     is_command_pressed = false;
-                    std::string name;
-                    std::cin >> name;
-                    m_model->SaveCurrentText(name);
+                    SaveMenuModel model;
+                    SaveMenuRender render(&model);
+                    SaveMenuController controller(&model, &render);
+                    controller.Run();
+//                    std::string name;
+//                    std::cin >> name;
+//                    m_model->SaveCurrentText(name);
                 }
             }
             if (event.type == sf::Event::MouseWheelScrolled){

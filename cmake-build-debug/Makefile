@@ -142,6 +142,87 @@ TextEditor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/build
 .PHONY : TextEditor/fast
 
+SaveMenu/SaveMenuController.o: SaveMenu/SaveMenuController.cpp.o
+
+.PHONY : SaveMenu/SaveMenuController.o
+
+# target to build an object file
+SaveMenu/SaveMenuController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o
+.PHONY : SaveMenu/SaveMenuController.cpp.o
+
+SaveMenu/SaveMenuController.i: SaveMenu/SaveMenuController.cpp.i
+
+.PHONY : SaveMenu/SaveMenuController.i
+
+# target to preprocess a source file
+SaveMenu/SaveMenuController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.i
+.PHONY : SaveMenu/SaveMenuController.cpp.i
+
+SaveMenu/SaveMenuController.s: SaveMenu/SaveMenuController.cpp.s
+
+.PHONY : SaveMenu/SaveMenuController.s
+
+# target to generate assembly for a file
+SaveMenu/SaveMenuController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.s
+.PHONY : SaveMenu/SaveMenuController.cpp.s
+
+SaveMenu/SaveMenuModel.o: SaveMenu/SaveMenuModel.cpp.o
+
+.PHONY : SaveMenu/SaveMenuModel.o
+
+# target to build an object file
+SaveMenu/SaveMenuModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o
+.PHONY : SaveMenu/SaveMenuModel.cpp.o
+
+SaveMenu/SaveMenuModel.i: SaveMenu/SaveMenuModel.cpp.i
+
+.PHONY : SaveMenu/SaveMenuModel.i
+
+# target to preprocess a source file
+SaveMenu/SaveMenuModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.i
+.PHONY : SaveMenu/SaveMenuModel.cpp.i
+
+SaveMenu/SaveMenuModel.s: SaveMenu/SaveMenuModel.cpp.s
+
+.PHONY : SaveMenu/SaveMenuModel.s
+
+# target to generate assembly for a file
+SaveMenu/SaveMenuModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.s
+.PHONY : SaveMenu/SaveMenuModel.cpp.s
+
+SaveMenu/SaveMenuRender.o: SaveMenu/SaveMenuRender.cpp.o
+
+.PHONY : SaveMenu/SaveMenuRender.o
+
+# target to build an object file
+SaveMenu/SaveMenuRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o
+.PHONY : SaveMenu/SaveMenuRender.cpp.o
+
+SaveMenu/SaveMenuRender.i: SaveMenu/SaveMenuRender.cpp.i
+
+.PHONY : SaveMenu/SaveMenuRender.i
+
+# target to preprocess a source file
+SaveMenu/SaveMenuRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.i
+.PHONY : SaveMenu/SaveMenuRender.cpp.i
+
+SaveMenu/SaveMenuRender.s: SaveMenu/SaveMenuRender.cpp.s
+
+.PHONY : SaveMenu/SaveMenuRender.s
+
+# target to generate assembly for a file
+SaveMenu/SaveMenuRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.s
+.PHONY : SaveMenu/SaveMenuRender.cpp.s
+
 TextEditorController.o: TextEditorController.cpp.o
 
 .PHONY : TextEditorController.o
@@ -259,6 +340,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TextEditor"
+	@echo "... SaveMenu/SaveMenuController.o"
+	@echo "... SaveMenu/SaveMenuController.i"
+	@echo "... SaveMenu/SaveMenuController.s"
+	@echo "... SaveMenu/SaveMenuModel.o"
+	@echo "... SaveMenu/SaveMenuModel.i"
+	@echo "... SaveMenu/SaveMenuModel.s"
+	@echo "... SaveMenu/SaveMenuRender.o"
+	@echo "... SaveMenu/SaveMenuRender.i"
+	@echo "... SaveMenu/SaveMenuRender.s"
 	@echo "... TextEditorController.o"
 	@echo "... TextEditorController.i"
 	@echo "... TextEditorController.s"

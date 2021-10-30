@@ -16,6 +16,7 @@ void TextEditorModel::init() {
     current_cursor_position = 0;
     max_symbols_in_line = 47;
     linesText.emplace_back("");
+    file_name = "";
 }
 
 void TextEditorModel::DownloadSaveWithName(std::string fileName) {
@@ -32,6 +33,7 @@ void TextEditorModel::DownloadSaveWithName(std::string fileName) {
 }
 
 void TextEditorModel::SaveCurrentText(std::string name) {
+    file_name = name;
     std::ofstream output;
     output.open(("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + name + ".txt"));
     for(const std::string& line : linesText){

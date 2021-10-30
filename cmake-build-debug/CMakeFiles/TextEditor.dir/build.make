@@ -128,12 +128,54 @@ CMakeFiles/TextEditor.dir/TextEditorController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/TextEditorController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/TextEditorController.cpp -o CMakeFiles/TextEditor.dir/TextEditorController.cpp.s
 
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o: ../SaveMenu/SaveMenuModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuModel.cpp
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuModel.cpp > CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.i
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuModel.cpp -o CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.s
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o: ../SaveMenu/SaveMenuRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuRender.cpp
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuRender.cpp > CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.i
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuRender.cpp -o CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.s
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o: ../SaveMenu/SaveMenuController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp > CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.i
+
+CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp -o CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.s
+
 # Object files for target TextEditor
 TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/main.cpp.o" \
 "CMakeFiles/TextEditor.dir/TextEditorModel.cpp.o" \
 "CMakeFiles/TextEditor.dir/TextEditorRender.cpp.o" \
-"CMakeFiles/TextEditor.dir/TextEditorController.cpp.o"
+"CMakeFiles/TextEditor.dir/TextEditorController.cpp.o" \
+"CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o" \
+"CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o" \
+"CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o"
 
 # External object files for target TextEditor
 TextEditor_EXTERNAL_OBJECTS =
@@ -142,6 +184,9 @@ TextEditor: CMakeFiles/TextEditor.dir/main.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/TextEditorModel.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/TextEditorRender.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/TextEditorController.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/build.make
 TextEditor: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 TextEditor: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
@@ -150,7 +195,7 @@ TextEditor: /usr/local/lib/libboost_system-mt.dylib
 TextEditor: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 TextEditor: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 TextEditor: CMakeFiles/TextEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable TextEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TextEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TextEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

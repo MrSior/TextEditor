@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o"
+  "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o"
+  "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o"
   "CMakeFiles/TextEditor.dir/TextEditorController.cpp.o"
   "CMakeFiles/TextEditor.dir/TextEditorModel.cpp.o"
   "CMakeFiles/TextEditor.dir/TextEditorRender.cpp.o"
