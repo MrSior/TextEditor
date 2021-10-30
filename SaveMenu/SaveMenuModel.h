@@ -12,11 +12,15 @@ private:
     std::string file_name;
     int max_symbols_in_name;
     int current_cursor_position;
+    bool is_saved;
 public:
     SaveMenuModel();
     void Init();
     void insertSymbol(char symbol);
+    void eraseSymbol();
     void setCurrentCursorPosition(int pos);
+    void setIsSaved(bool isSaved);
+    bool getIsSaved();
     int getCurrentCursorPosition();
     std::string getFileName();
 };

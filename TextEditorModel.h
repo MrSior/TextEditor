@@ -32,6 +32,7 @@ public:
     int getCurrentCursorPosition();
     int getCurrentLine();
     int getMaxSymbolsInLine();
+    std::string getFileName();
     std::string getLine(int n);
     int getLineCount();
     void changeMaxSymbolsInLine(int new_width);

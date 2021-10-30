@@ -18,7 +18,7 @@ TextEditorController::TextEditorController(TextEditorRender *render, TextEditorM
 
 void TextEditorController::Run() {
     sf::Event event;
-    bool systemKeyPressed = false;
+    bool isSystemKeyPressed = false;
     while (m_render->window().isOpen()){
         while (m_render->window().pollEvent(event)){
             if (event.type == sf::Event::Closed){
@@ -42,28 +42,32 @@ void TextEditorController::Run() {
                 if (event.key.code == sf::Keyboard::Enter){
                     m_model->lineBreak();
                     m_render->checkCursorPosition("Enter");
-                    systemKeyPressed = true;
+                    isSystemKeyPressed = true;
                 }
                 if (event.key.code == sf::Keyboard::BackSpace){
                     m_model->eraseSymbol();
                     m_render->checkCursorPosition("Backspace");
-                    systemKeyPressed = true;
+                    isSystemKeyPressed = true;
                 }
                 if (event.key.code == sf::Keyboard::Tab){
-                    systemKeyPressed = true;
+                    isSystemKeyPressed = true;
                 }
                 if (event.key.code == sf::Keyboard::LSystem){
                     is_command_pressed = true;
                 }
                 if (event.key.code == sf::Keyboard::S && is_command_pressed){
                     is_command_pressed = false;
-                    SaveMenuModel model;
-                    SaveMenuRender render(&model);
-                    SaveMenuController controller(&model, &render);
-                    controller.Run();
-//                    std::string name;
-//                    std::cin >> name;
-//                    m_model->SaveCurrentText(name);
+                    if (m_model->getFileName().empty()) {
+                        SaveMenuModel model;
+                        SaveMenuRender render(&model);
+                        SaveMenuController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsSaved()) {
+                            m_model->SaveCurrentText(model.getFileName());
+                        }
+                    } else{
+                        m_model->SaveCurrentText(m_model->getFileName());
+                    }
                 }
             }
             if (event.type == sf::Event::MouseWheelScrolled){
@@ -112,10 +116,10 @@ void TextEditorController::Run() {
             }
             if (event.type == sf::Event::TextEntered){
                 //std::cout << char(event.text.unicode) <<'\n';
-                if (!systemKeyPressed) {
+                if (!isSystemKeyPressed) {
                     m_model->insertSymbol(char(event.text.unicode));
                 } else{
-                    systemKeyPressed = false;
+                    isSystemKeyPressed = false;
                 }
             }
         }

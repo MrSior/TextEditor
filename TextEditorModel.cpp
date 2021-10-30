@@ -35,7 +35,7 @@ void TextEditorModel::DownloadSaveWithName(std::string fileName) {
 void TextEditorModel::SaveCurrentText(std::string name) {
     file_name = name;
     std::ofstream output;
-    output.open(("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + name + ".txt"));
+    output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + name + ".txt", std::ios_base::trunc);
     for(const std::string& line : linesText){
         output << line << std::endl;
     }
@@ -206,6 +206,10 @@ void TextEditorModel::resetLines(bool isWindowSmaller, int prev_max_symbols_in_l
 
 int TextEditorModel::getMaxSymbolsInLine() {
     return max_symbols_in_line;
+}
+
+std::string TextEditorModel::getFileName() {
+    return file_name;
 }
 
 

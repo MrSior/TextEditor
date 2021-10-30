@@ -12,6 +12,7 @@ void SaveMenuModel::Init() {
     file_name = "";
     max_symbols_in_name = 30;
     current_cursor_position = 0;
+    is_saved = false;
 }
 
 void SaveMenuModel::insertSymbol(char symbol) {
@@ -26,11 +27,26 @@ std::string SaveMenuModel::getFileName() {
 }
 
 void SaveMenuModel::setCurrentCursorPosition(int pos) {
-    if (pos >= 0 && pos <= max_symbols_in_name){
+    if (pos >= 0 && pos <= file_name.length()){
         current_cursor_position = pos;
     }
 }
 
 int SaveMenuModel::getCurrentCursorPosition() {
     return current_cursor_position;
+}
+
+void SaveMenuModel::eraseSymbol() {
+    if (!file_name.empty()){
+        file_name.erase(file_name.begin() + current_cursor_position - 1);
+        current_cursor_position--;
+    }
+}
+
+void SaveMenuModel::setIsSaved(bool isSaved) {
+    is_saved = isSaved;
+}
+
+bool SaveMenuModel::getIsSaved() {
+    return is_saved;
 }
