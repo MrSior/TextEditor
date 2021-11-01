@@ -31,6 +31,12 @@ void FinderController::Run() {
                     }
                     m_render->window().close();
                 }
+                if (event.key.code == sf::Keyboard::BackSpace){
+                    if (m_model->getFilesCount()) {
+                        m_model->eraseFile(m_model->getCurrentChosenFilePos());
+                        m_model->setCurrentChosenFilePos(m_model->getCurrentChosenFilePos() - 1);
+                    }
+                }
             }
             if (event.type == sf::Event::MouseButtonPressed) {
                 if (event.mouseButton.button == sf::Mouse::Left) {
