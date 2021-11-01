@@ -19,15 +19,22 @@ void FinderController::Run() {
             if (event.type == sf::Event::KeyPressed){
                 if (event.key.code == sf::Keyboard::Up){
                     m_model->setCurrentChosenFilePos(m_model->getCurrentChosenFilePos() - 1);
+                    m_render->checkCursorPosition("Up");
                 }
                 if (event.key.code == sf::Keyboard::Down){
                     m_model->setCurrentChosenFilePos(m_model->getCurrentChosenFilePos() + 1);
+                    m_render->checkCursorPosition("Down");
                 }
                 if (event.key.code == sf::Keyboard::Enter){
                     if (m_model->getFilesCount()) {
                         m_model->setIsFileChose(true);
                     }
                     m_render->window().close();
+                }
+            }
+            if (event.type == sf::Event::MouseButtonPressed) {
+                if (event.mouseButton.button == sf::Mouse::Left) {
+                    m_model->setCurrentChosenFilePos(int(event.mouseButton.y + m_render->getY_scrolled()) / 45);
                 }
             }
             if (event.type == sf::Event::MouseWheelScrolled) {

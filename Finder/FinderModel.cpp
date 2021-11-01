@@ -36,6 +36,9 @@ void FinderModel::setCurrentChosenFilePos(int pos) {
     if (pos >= 0 && pos < files.size()){
         current_chosen_file_pos = pos;
     }
+    if (pos > files.size() && pos >= 0){
+        current_chosen_file_pos = files.size() - 1;
+    }
 }
 
 void FinderModel::eraseFile(int pos) {

@@ -26,10 +26,12 @@ void FinderRender::Render() {
 void FinderRender::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
 
-    sf::RectangleShape cursor(sf::Vector2f(float(window_x), 45));
-    cursor.setPosition(0, m_model->getCurrentChosenFilePos() * 45 - y_scrolled);
-    cursor.setFillColor(sf::Color(66, 84, 90));
-    target.draw(cursor);
+    if (m_model->getFilesCount()) {
+        sf::RectangleShape cursor(sf::Vector2f(float(window_x), 45));
+        cursor.setPosition(0, m_model->getCurrentChosenFilePos() * 45 - y_scrolled);
+        cursor.setFillColor(sf::Color(66, 84, 90));
+        target.draw(cursor);
+    }
 
     for (int i = 0; i < m_model->getFilesCount(); ++i) {
         std::string file = m_model->getFile(i);
@@ -45,11 +47,27 @@ float FinderRender::getY_scrolled() {
 }
 
 void FinderRender::setY_scrolled(float value) {
-    if (value <= float (m_model->getFilesCount() - window_y / 22) * 45 && m_model->getFilesCount() > window_y / 22){
+    if (value <= float (m_model->getFilesCount() - window_y / 45) * 45 && m_model->getFilesCount() > window_y / 45){
         y_scrolled = value;
     }
     if (y_scrolled < 0){
         y_scrolled = 0;
+    }
+}
+
+void FinderRender::checkCursorPosition(std::string buttonPressed) {
+    if (buttonPressed == "Down"){
+        if (float(m_model->getCurrentChosenFilePos() + 1) * 45 - y_scrolled > window_y){
+            y_scrolled += 45;
+        }
+    }
+    if (buttonPressed == "Up"){
+        if (float(m_model->getCurrentChosenFilePos() + 1) * 45 - y_scrolled < 45) {
+            y_scrolled -= 90;
+            if (y_scrolled < 0){
+                y_scrolled = 0;
+            }
+        }
     }
 }
 

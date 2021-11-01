@@ -23,6 +23,7 @@ public:
     void Render();
     float getY_scrolled();
     void setY_scrolled(float value);
+    void checkCursorPosition(std::string buttonPressed);
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 };
 
