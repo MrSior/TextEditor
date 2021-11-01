@@ -33,6 +33,12 @@ void SaveMenuController::Run() {
                     m_model->setCurrentCursorPosition(m_model->getCurrentCursorPosition() + 1);
                 }
             }
+            if (event.type == sf::Event::MouseButtonPressed){
+                if (event.mouseButton.button == sf::Mouse::Left){
+                    int chosen_symbol = (event.mouseButton.x - 252) / 22;
+                    m_model->setCurrentCursorPosition(chosen_symbol);
+                }
+            }
             if (event.type == sf::Event::TextEntered){
                 if (!isSystemKeyPressed) {
                     m_model->insertSymbol(char(event.text.unicode));

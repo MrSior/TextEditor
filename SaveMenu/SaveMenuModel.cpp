@@ -30,6 +30,9 @@ void SaveMenuModel::setCurrentCursorPosition(int pos) {
     if (pos >= 0 && pos <= file_name.length()){
         current_cursor_position = pos;
     }
+    if (pos > file_name.length() && pos >= 0){
+        current_cursor_position = file_name.length();
+    }
 }
 
 int SaveMenuModel::getCurrentCursorPosition() {

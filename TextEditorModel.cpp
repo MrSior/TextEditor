@@ -8,13 +8,14 @@
 #include "iostream"
 
 TextEditorModel::TextEditorModel() {
-    init();
+    Init();
 }
 
-void TextEditorModel::init() {
+void TextEditorModel::Init() {
     current_line = 0;
     current_cursor_position = 0;
     max_symbols_in_line = 47;
+    linesText.clear();
     linesText.emplace_back("");
     file_name = "";
 }
@@ -26,13 +27,23 @@ void TextEditorModel::DownloadSaveWithName(std::string fileName) {
         return;
     }
     std::string line;
+    linesText.clear();
     while (std::getline(input, line)){
         linesText.push_back(line);
     }
     input.close();
+    file_name = fileName;
+    current_cursor_position = 0;
+    current_line = 0;
 }
 
 void TextEditorModel::SaveCurrentText(std::string name) {
+    if (file_name.empty()) {
+        std::ofstream output2;
+        output2.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt", std::ios_base::app);
+        output2 << name << std::endl;
+        output2.close();
+    }
     file_name = name;
     std::ofstream output;
     output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + name + ".txt", std::ios_base::trunc);

@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o"
+  "CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o"
+  "CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o"
   "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o"
   "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o"
   "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o"

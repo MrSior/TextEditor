@@ -167,6 +167,45 @@ CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp -o CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.s
 
+CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o: ../Finder/FinderModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderModel.cpp
+
+CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderModel.cpp > CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.i
+
+CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderModel.cpp -o CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.s
+
+CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o: ../Finder/FinderRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderRender.cpp
+
+CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderRender.cpp > CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.i
+
+CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderRender.cpp -o CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.s
+
+CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o: ../Finder/FinderController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp
+
+CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp > CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.i
+
+CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp -o CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.s
+
 # Object files for target TextEditor
 TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/main.cpp.o" \
@@ -175,7 +214,10 @@ TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/TextEditorController.cpp.o" \
 "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o" \
 "CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o" \
-"CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o"
+"CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o" \
+"CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o" \
+"CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o" \
+"CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o"
 
 # External object files for target TextEditor
 TextEditor_EXTERNAL_OBJECTS =
@@ -187,6 +229,9 @@ TextEditor: CMakeFiles/TextEditor.dir/TextEditorController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuModel.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuRender.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/SaveMenu/SaveMenuController.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/build.make
 TextEditor: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 TextEditor: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
@@ -195,7 +240,7 @@ TextEditor: /usr/local/lib/libboost_system-mt.dylib
 TextEditor: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 TextEditor: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 TextEditor: CMakeFiles/TextEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TextEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable TextEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TextEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

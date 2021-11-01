@@ -142,6 +142,87 @@ TextEditor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/build
 .PHONY : TextEditor/fast
 
+Finder/FinderController.o: Finder/FinderController.cpp.o
+
+.PHONY : Finder/FinderController.o
+
+# target to build an object file
+Finder/FinderController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o
+.PHONY : Finder/FinderController.cpp.o
+
+Finder/FinderController.i: Finder/FinderController.cpp.i
+
+.PHONY : Finder/FinderController.i
+
+# target to preprocess a source file
+Finder/FinderController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.i
+.PHONY : Finder/FinderController.cpp.i
+
+Finder/FinderController.s: Finder/FinderController.cpp.s
+
+.PHONY : Finder/FinderController.s
+
+# target to generate assembly for a file
+Finder/FinderController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.s
+.PHONY : Finder/FinderController.cpp.s
+
+Finder/FinderModel.o: Finder/FinderModel.cpp.o
+
+.PHONY : Finder/FinderModel.o
+
+# target to build an object file
+Finder/FinderModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o
+.PHONY : Finder/FinderModel.cpp.o
+
+Finder/FinderModel.i: Finder/FinderModel.cpp.i
+
+.PHONY : Finder/FinderModel.i
+
+# target to preprocess a source file
+Finder/FinderModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.i
+.PHONY : Finder/FinderModel.cpp.i
+
+Finder/FinderModel.s: Finder/FinderModel.cpp.s
+
+.PHONY : Finder/FinderModel.s
+
+# target to generate assembly for a file
+Finder/FinderModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.s
+.PHONY : Finder/FinderModel.cpp.s
+
+Finder/FinderRender.o: Finder/FinderRender.cpp.o
+
+.PHONY : Finder/FinderRender.o
+
+# target to build an object file
+Finder/FinderRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o
+.PHONY : Finder/FinderRender.cpp.o
+
+Finder/FinderRender.i: Finder/FinderRender.cpp.i
+
+.PHONY : Finder/FinderRender.i
+
+# target to preprocess a source file
+Finder/FinderRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.i
+.PHONY : Finder/FinderRender.cpp.i
+
+Finder/FinderRender.s: Finder/FinderRender.cpp.s
+
+.PHONY : Finder/FinderRender.s
+
+# target to generate assembly for a file
+Finder/FinderRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.s
+.PHONY : Finder/FinderRender.cpp.s
+
 SaveMenu/SaveMenuController.o: SaveMenu/SaveMenuController.cpp.o
 
 .PHONY : SaveMenu/SaveMenuController.o
@@ -340,6 +421,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TextEditor"
+	@echo "... Finder/FinderController.o"
+	@echo "... Finder/FinderController.i"
+	@echo "... Finder/FinderController.s"
+	@echo "... Finder/FinderModel.o"
+	@echo "... Finder/FinderModel.i"
+	@echo "... Finder/FinderModel.s"
+	@echo "... Finder/FinderRender.o"
+	@echo "... Finder/FinderRender.i"
+	@echo "... Finder/FinderRender.s"
 	@echo "... SaveMenu/SaveMenuController.o"
 	@echo "... SaveMenu/SaveMenuController.i"
 	@echo "... SaveMenu/SaveMenuController.s"

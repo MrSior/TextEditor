@@ -88,6 +88,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

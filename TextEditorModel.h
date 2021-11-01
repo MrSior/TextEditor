@@ -17,7 +17,7 @@ private:
     std::string file_name;
 public:
     TextEditorModel();
-    void init();
+    void Init();
     void DownloadSaveWithName(std::string fileName);
     void SaveCurrentText(std::string name);
 

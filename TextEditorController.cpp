@@ -7,6 +7,9 @@
 #include "SaveMenu/SaveMenuController.h"
 #include "SaveMenu/SaveMenuRender.h"
 #include "SaveMenu/SaveMenuModel.h"
+#include "Finder/FinderModel.h"
+#include "Finder/FinderRender.h"
+#include "Finder/FinderController.h"
 #include "iostream"
 #include "cmath"
 
@@ -68,6 +71,32 @@ void TextEditorController::Run() {
                     } else{
                         m_model->SaveCurrentText(m_model->getFileName());
                     }
+                }
+                if (event.key.code == sf::Keyboard::O && is_command_pressed){
+                    is_command_pressed = false;
+                    FinderModel model;
+                    FinderRender render(&model);
+                    FinderController controller(&model, &render);
+                    controller.Run();
+                    if (model.getIsFileChose()) {
+                        m_model->DownloadSaveWithName(model.getFile(model.getCurrentChosenFilePos()));
+                    }
+                }
+                if (event.key.code == sf::Keyboard::N && is_command_pressed){
+                    is_command_pressed = false;
+                    if (m_model->getFileName().empty()) {
+                        SaveMenuModel model;
+                        SaveMenuRender render(&model);
+                        SaveMenuController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsSaved()) {
+                            m_model->SaveCurrentText(model.getFileName());
+                        }
+                    } else{
+                        m_model->SaveCurrentText(m_model->getFileName());
+                    }
+                    m_model->Init();
+                    m_render->Init();
                 }
             }
             if (event.type == sf::Event::MouseWheelScrolled){

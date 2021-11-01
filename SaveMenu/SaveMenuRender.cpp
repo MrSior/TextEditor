@@ -12,7 +12,7 @@ SaveMenuRender::SaveMenuRender(SaveMenuModel *model) {
 void SaveMenuRender::Init() {
     window_x = 946;
     window_y = 65;
-    m_window.create(sf::VideoMode(window_x, window_y), "Text Editor"/*, sf::Style::Close | sf::Style::Titlebar*/);
+    m_window.create(sf::VideoMode(window_x, window_y), "Text Editor", sf::Style::Close | sf::Style::Titlebar);
     font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
 }
 
