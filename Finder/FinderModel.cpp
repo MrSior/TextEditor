@@ -11,7 +11,8 @@ FinderModel::FinderModel() {
 }
 
 void FinderModel::Init() {
-    std::ifstream input("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt");
+    //std::ifstream input("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt");
+    std::ifstream input("./Saves/NamesOfSavedFiles.txt");
     std::string line;
     while (std::getline(input, line)){
         files.push_back(line);
@@ -61,7 +62,8 @@ void FinderModel::eraseFile(int pos) {
 
     files.erase(files.begin() + pos);
     std::ofstream output;
-    output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt", std::ios_base::trunc);
+    //output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt", std::ios_base::trunc);
+    output.open("./Saves/NamesOfSavedFiles.txt", std::ios_base::trunc);
     for(std::string name : files){
         output << name << std::endl;
     }

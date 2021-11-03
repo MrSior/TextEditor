@@ -13,7 +13,8 @@ void SaveMenuRender::Init() {
     window_x = 946;
     window_y = 65;
     m_window.create(sf::VideoMode(window_x, window_y), "Text Editor", sf::Style::Close | sf::Style::Titlebar);
-    font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
+    //font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
+    font.loadFromFile("./Fonts/Courier New.ttf");
 }
 
 void SaveMenuRender::Render() {

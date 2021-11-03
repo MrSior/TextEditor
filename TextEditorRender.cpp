@@ -18,7 +18,8 @@ void TextEditorRender::Init() {
     window_x = 1100;
     window_y = 700;
     m_window.create(sf::VideoMode(window_x, window_y), "Text Editor"/*, sf::Style::Close | sf::Style::Titlebar*/);
-    font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
+    //font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
+    font.loadFromFile("./Fonts/Courier New.ttf");
     //font.loadFromFile("/Users/simonchubenko/Documents/C++/text-editor/fonts/DejaVuSansMono.ttf");
 }
 

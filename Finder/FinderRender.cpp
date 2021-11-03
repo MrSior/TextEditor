@@ -14,7 +14,8 @@ void FinderRender::Init() {
     window_y = 700;
     y_scrolled = 0;
     m_window.create(sf::VideoMode(window_x, window_y), "Text Editor", sf::Style::Close | sf::Style::Titlebar);
-    font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
+    //font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");
+    font.loadFromFile("./Fonts/Courier New.ttf");
 }
 
 void FinderRender::Render() {

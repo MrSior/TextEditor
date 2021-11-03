@@ -21,7 +21,8 @@ void TextEditorModel::Init() {
 }
 
 void TextEditorModel::DownloadSaveWithName(std::string fileName) {
-    std::ifstream input ("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + fileName + ".txt");
+    //std::ifstream input ("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + fileName + ".txt");
+    std::ifstream input ("./Saves/" + fileName + ".txt");
     if (!input.is_open()){
         std::cout << "ERROR: file with name " + fileName + " can't be open" << std::endl;
         return;
@@ -39,14 +40,16 @@ void TextEditorModel::DownloadSaveWithName(std::string fileName) {
 
 void TextEditorModel::SaveCurrentText(std::string name) {
     if (file_name.empty()) {
-        std::ofstream output2;
-        output2.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt", std::ios_base::app);
-        output2 << name << std::endl;
-        output2.close();
+        std::ofstream output;
+        //output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt", std::ios_base::app);
+        output.open("./Saves/NamesOfSavedFiles.txt", std::ios_base::app);
+        output << name << std::endl;
+        output.close();
     }
     file_name = name;
     std::ofstream output;
-    output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + name + ".txt", std::ios_base::trunc);
+    //output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + name + ".txt", std::ios_base::trunc);
+    output.open("./Saves/" + name + ".txt", std::ios_base::trunc);
     for(const std::string& line : linesText){
         output << line << std::endl;
     }
