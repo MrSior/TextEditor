@@ -223,4 +223,30 @@ std::string TextEditorModel::getFileName() {
     return file_name;
 }
 
+void TextEditorModel::collapseBrackets() {
+    for(int j = 0; j < linesText.size(); j++){
+        std::string& str = linesText[j];
+        bool isBracketFound = false;
+        for (int i = 0; i < str.length(); ++i) {
+            if (str[i] == '{'){
+                isBracketFound = true;
+            } else if (str[i] == '}'){
+                isBracketFound = false;
+                if (j == current_line && current_cursor_position >= i){
+                    current_cursor_position--;
+                }
+                str.erase(str.begin() + i);
+            }
+
+            if (isBracketFound){
+                if (j == current_line && current_cursor_position >= i){
+                    current_cursor_position--;
+                }
+                str.erase(str.begin() + i);
+                i--;
+            }
+        }
+    }
+}
+
 
