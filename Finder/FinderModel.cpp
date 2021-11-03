@@ -44,30 +44,19 @@ void FinderModel::setCurrentChosenFilePos(int pos) {
 }
 
 void FinderModel::eraseFile(int pos) {
-//    std::string fn = files[pos];
-//    //char file_name[fn.length()];
-//    std::string p = "/Users/simonchubenko/Documents/C++/TextEditor/Saves/";
-//    char path[fn.length() + p.length()];
-//    //std::strcpy(file_name, fn.c_str());
-//    for (int i = 0; i < p.length(); i++) {
-//        path[i] = p[i];
-//    }
-//    for (int i = p.length() - 1; i < fn.length() + p.length(); i++) {
-//        path[i] = fn[i - ];
-//    }
-//    p = ".txt";
-//    for (int i = fn.length() + p.length() - 1; i < fn.length() + p.length(); ++i) {
-//        path[i] = p[i];
-//    }
-
+    std::string file_name = files[pos];
+    std::string root = "./Saves/" + file_name + ".txt";
+    char root_array[root.length()];
+    for (int i = 0; i < root.length(); ++i) {
+        root_array[i] = root[i];
+    }
+    remove(root_array);
     files.erase(files.begin() + pos);
     std::ofstream output;
-    //output.open("/Users/simonchubenko/Documents/C++/TextEditor/Saves/NamesOfSavedFiles.txt", std::ios_base::trunc);
     output.open("./Saves/NamesOfSavedFiles.txt", std::ios_base::trunc);
     for(std::string name : files){
         output << name << std::endl;
     }
-    //remove("/Users/simonchubenko/Documents/C++/TextEditor/Saves/" + file_name + ".txt");
 }
 
 int FinderModel::getFilesCount() {
