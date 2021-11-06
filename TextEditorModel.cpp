@@ -211,7 +211,7 @@ void TextEditorModel::resetLines(bool isWindowSmaller, int prev_max_symbols_in_l
             }
         }
     }
-    TextEditorModel::setCurrentCursorPosition(0);
+    setCurrentCursorPosition(0);
     if (current_line >= linesText.size()){
         current_line = linesText.size() - 1;
     }
@@ -252,4 +252,17 @@ void TextEditorModel::collapseBrackets() {
     }
 }
 
-
+void TextEditorModel::contextualReplacement(std::string fromString, std::string toString) {
+    int counter = 0;
+    for(std::string& line : linesText){
+        auto itr = line.find(fromString);
+        while (itr != std::string::npos){
+            line.erase(itr, fromString.length());
+            line.insert(itr, toString);
+            itr = line.find(fromString);
+        }
+        checkProtrudingPart();
+        counter++;
+    }
+    checkProtrudingPart();
+}

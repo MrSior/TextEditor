@@ -113,6 +113,7 @@ void TextEditorController::Run() {
                         ContextualReplacementRender render(&model);
                         ContextualReplacementController controller(&model, &render);
                         controller.Run();
+                        m_model->contextualReplacement(model.getFromString(), model.getToString());
                     }
                 }
             }
