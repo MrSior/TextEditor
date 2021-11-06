@@ -88,6 +88,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

@@ -142,6 +142,87 @@ TextEditor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/build
 .PHONY : TextEditor/fast
 
+ContextualReplacementMenu/ContextualReplacementController.o: ContextualReplacementMenu/ContextualReplacementController.cpp.o
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementController.o
+
+# target to build an object file
+ContextualReplacementMenu/ContextualReplacementController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementController.cpp.o
+.PHONY : ContextualReplacementMenu/ContextualReplacementController.cpp.o
+
+ContextualReplacementMenu/ContextualReplacementController.i: ContextualReplacementMenu/ContextualReplacementController.cpp.i
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementController.i
+
+# target to preprocess a source file
+ContextualReplacementMenu/ContextualReplacementController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementController.cpp.i
+.PHONY : ContextualReplacementMenu/ContextualReplacementController.cpp.i
+
+ContextualReplacementMenu/ContextualReplacementController.s: ContextualReplacementMenu/ContextualReplacementController.cpp.s
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementController.s
+
+# target to generate assembly for a file
+ContextualReplacementMenu/ContextualReplacementController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementController.cpp.s
+.PHONY : ContextualReplacementMenu/ContextualReplacementController.cpp.s
+
+ContextualReplacementMenu/ContextualReplacementModel.o: ContextualReplacementMenu/ContextualReplacementModel.cpp.o
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementModel.o
+
+# target to build an object file
+ContextualReplacementMenu/ContextualReplacementModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementModel.cpp.o
+.PHONY : ContextualReplacementMenu/ContextualReplacementModel.cpp.o
+
+ContextualReplacementMenu/ContextualReplacementModel.i: ContextualReplacementMenu/ContextualReplacementModel.cpp.i
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementModel.i
+
+# target to preprocess a source file
+ContextualReplacementMenu/ContextualReplacementModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementModel.cpp.i
+.PHONY : ContextualReplacementMenu/ContextualReplacementModel.cpp.i
+
+ContextualReplacementMenu/ContextualReplacementModel.s: ContextualReplacementMenu/ContextualReplacementModel.cpp.s
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementModel.s
+
+# target to generate assembly for a file
+ContextualReplacementMenu/ContextualReplacementModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementModel.cpp.s
+.PHONY : ContextualReplacementMenu/ContextualReplacementModel.cpp.s
+
+ContextualReplacementMenu/ContextualReplacementRender.o: ContextualReplacementMenu/ContextualReplacementRender.cpp.o
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementRender.o
+
+# target to build an object file
+ContextualReplacementMenu/ContextualReplacementRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.o
+.PHONY : ContextualReplacementMenu/ContextualReplacementRender.cpp.o
+
+ContextualReplacementMenu/ContextualReplacementRender.i: ContextualReplacementMenu/ContextualReplacementRender.cpp.i
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementRender.i
+
+# target to preprocess a source file
+ContextualReplacementMenu/ContextualReplacementRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.i
+.PHONY : ContextualReplacementMenu/ContextualReplacementRender.cpp.i
+
+ContextualReplacementMenu/ContextualReplacementRender.s: ContextualReplacementMenu/ContextualReplacementRender.cpp.s
+
+.PHONY : ContextualReplacementMenu/ContextualReplacementRender.s
+
+# target to generate assembly for a file
+ContextualReplacementMenu/ContextualReplacementRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.s
+.PHONY : ContextualReplacementMenu/ContextualReplacementRender.cpp.s
+
 Finder/FinderController.o: Finder/FinderController.cpp.o
 
 .PHONY : Finder/FinderController.o
@@ -421,6 +502,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TextEditor"
+	@echo "... ContextualReplacementMenu/ContextualReplacementController.o"
+	@echo "... ContextualReplacementMenu/ContextualReplacementController.i"
+	@echo "... ContextualReplacementMenu/ContextualReplacementController.s"
+	@echo "... ContextualReplacementMenu/ContextualReplacementModel.o"
+	@echo "... ContextualReplacementMenu/ContextualReplacementModel.i"
+	@echo "... ContextualReplacementMenu/ContextualReplacementModel.s"
+	@echo "... ContextualReplacementMenu/ContextualReplacementRender.o"
+	@echo "... ContextualReplacementMenu/ContextualReplacementRender.i"
+	@echo "... ContextualReplacementMenu/ContextualReplacementRender.s"
 	@echo "... Finder/FinderController.o"
 	@echo "... Finder/FinderController.i"
 	@echo "... Finder/FinderController.s"

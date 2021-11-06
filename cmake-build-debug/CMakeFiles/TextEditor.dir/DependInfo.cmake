@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementController.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementController.cpp.o"
+  "/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementModel.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementModel.cpp.o"
+  "/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementRender.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderModel.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderRender.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o"

@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementController.cpp.o"
+  "CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementModel.cpp.o"
+  "CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.o"
   "CMakeFiles/TextEditor.dir/Finder/FinderController.cpp.o"
   "CMakeFiles/TextEditor.dir/Finder/FinderModel.cpp.o"
   "CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.o"

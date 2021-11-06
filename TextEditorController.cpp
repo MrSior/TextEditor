@@ -10,6 +10,9 @@
 #include "Finder/FinderModel.h"
 #include "Finder/FinderRender.h"
 #include "Finder/FinderController.h"
+#include "ContextualReplacementMenu/ContextualReplacementModel.h"
+#include "ContextualReplacementMenu/ContextualReplacementRender.h"
+#include "ContextualReplacementMenu/ContextualReplacementController.h"
 #include "iostream"
 #include "cmath"
 
@@ -103,6 +106,13 @@ void TextEditorController::Run() {
                         }
                         m_model->Init();
                         m_render->Init();
+                    }
+                    if (event.key.code == sf::Keyboard::K){
+                        is_command_pressed = false;
+                        ContextualReplacementModel model;
+                        ContextualReplacementRender render(&model);
+                        ContextualReplacementController controller(&model, &render);
+                        controller.Run();
                     }
                 }
             }
