@@ -385,6 +385,87 @@ InsertLineMenu/InsertLineMenuRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuRender.cpp.s
 .PHONY : InsertLineMenu/InsertLineMenuRender.cpp.s
 
+InsertLinesMenu/InsertLinesMenuController.o: InsertLinesMenu/InsertLinesMenuController.cpp.o
+
+.PHONY : InsertLinesMenu/InsertLinesMenuController.o
+
+# target to build an object file
+InsertLinesMenu/InsertLinesMenuController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.o
+.PHONY : InsertLinesMenu/InsertLinesMenuController.cpp.o
+
+InsertLinesMenu/InsertLinesMenuController.i: InsertLinesMenu/InsertLinesMenuController.cpp.i
+
+.PHONY : InsertLinesMenu/InsertLinesMenuController.i
+
+# target to preprocess a source file
+InsertLinesMenu/InsertLinesMenuController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.i
+.PHONY : InsertLinesMenu/InsertLinesMenuController.cpp.i
+
+InsertLinesMenu/InsertLinesMenuController.s: InsertLinesMenu/InsertLinesMenuController.cpp.s
+
+.PHONY : InsertLinesMenu/InsertLinesMenuController.s
+
+# target to generate assembly for a file
+InsertLinesMenu/InsertLinesMenuController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.s
+.PHONY : InsertLinesMenu/InsertLinesMenuController.cpp.s
+
+InsertLinesMenu/InsertLinesMenuModel.o: InsertLinesMenu/InsertLinesMenuModel.cpp.o
+
+.PHONY : InsertLinesMenu/InsertLinesMenuModel.o
+
+# target to build an object file
+InsertLinesMenu/InsertLinesMenuModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuModel.cpp.o
+.PHONY : InsertLinesMenu/InsertLinesMenuModel.cpp.o
+
+InsertLinesMenu/InsertLinesMenuModel.i: InsertLinesMenu/InsertLinesMenuModel.cpp.i
+
+.PHONY : InsertLinesMenu/InsertLinesMenuModel.i
+
+# target to preprocess a source file
+InsertLinesMenu/InsertLinesMenuModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuModel.cpp.i
+.PHONY : InsertLinesMenu/InsertLinesMenuModel.cpp.i
+
+InsertLinesMenu/InsertLinesMenuModel.s: InsertLinesMenu/InsertLinesMenuModel.cpp.s
+
+.PHONY : InsertLinesMenu/InsertLinesMenuModel.s
+
+# target to generate assembly for a file
+InsertLinesMenu/InsertLinesMenuModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuModel.cpp.s
+.PHONY : InsertLinesMenu/InsertLinesMenuModel.cpp.s
+
+InsertLinesMenu/InsertLinesMenuRender.o: InsertLinesMenu/InsertLinesMenuRender.cpp.o
+
+.PHONY : InsertLinesMenu/InsertLinesMenuRender.o
+
+# target to build an object file
+InsertLinesMenu/InsertLinesMenuRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuRender.cpp.o
+.PHONY : InsertLinesMenu/InsertLinesMenuRender.cpp.o
+
+InsertLinesMenu/InsertLinesMenuRender.i: InsertLinesMenu/InsertLinesMenuRender.cpp.i
+
+.PHONY : InsertLinesMenu/InsertLinesMenuRender.i
+
+# target to preprocess a source file
+InsertLinesMenu/InsertLinesMenuRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuRender.cpp.i
+.PHONY : InsertLinesMenu/InsertLinesMenuRender.cpp.i
+
+InsertLinesMenu/InsertLinesMenuRender.s: InsertLinesMenu/InsertLinesMenuRender.cpp.s
+
+.PHONY : InsertLinesMenu/InsertLinesMenuRender.s
+
+# target to generate assembly for a file
+InsertLinesMenu/InsertLinesMenuRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuRender.cpp.s
+.PHONY : InsertLinesMenu/InsertLinesMenuRender.cpp.s
+
 SaveMenu/SaveMenuController.o: SaveMenu/SaveMenuController.cpp.o
 
 .PHONY : SaveMenu/SaveMenuController.o
@@ -610,6 +691,15 @@ help:
 	@echo "... InsertLineMenu/InsertLineMenuRender.o"
 	@echo "... InsertLineMenu/InsertLineMenuRender.i"
 	@echo "... InsertLineMenu/InsertLineMenuRender.s"
+	@echo "... InsertLinesMenu/InsertLinesMenuController.o"
+	@echo "... InsertLinesMenu/InsertLinesMenuController.i"
+	@echo "... InsertLinesMenu/InsertLinesMenuController.s"
+	@echo "... InsertLinesMenu/InsertLinesMenuModel.o"
+	@echo "... InsertLinesMenu/InsertLinesMenuModel.i"
+	@echo "... InsertLinesMenu/InsertLinesMenuModel.s"
+	@echo "... InsertLinesMenu/InsertLinesMenuRender.o"
+	@echo "... InsertLinesMenu/InsertLinesMenuRender.i"
+	@echo "... InsertLinesMenu/InsertLinesMenuRender.s"
 	@echo "... SaveMenu/SaveMenuController.o"
 	@echo "... SaveMenu/SaveMenuController.i"
 	@echo "... SaveMenu/SaveMenuController.s"

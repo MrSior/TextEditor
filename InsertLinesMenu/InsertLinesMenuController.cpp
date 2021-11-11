@@ -2,14 +2,14 @@
 // Created by Семён Чубенко on 11.11.2021.
 //
 
-#include "InsertLineMenuController.h"
+#include "InsertLinesMenuController.h"
 
-InsertLineMenuController::InsertLineMenuController(InsertLineMenuModel *model, InsertLineMenuRender *render) {
+InsertLinesMenuController::InsertLinesMenuController(InsertLinesMenuModel *model, InsertLinesMenuRender *render) {
     m_model = model;
     m_render = render;
 }
 
-void InsertLineMenuController::Run() {
+void InsertLinesMenuController::Run() {
     sf::Event event;
     bool isSystemKeyPressed = false;
     while (m_render->window().isOpen()) {
@@ -20,7 +20,7 @@ void InsertLineMenuController::Run() {
             if (event.type == sf::Event::KeyPressed){
                 if (event.key.code == sf::Keyboard::Enter){
                     isSystemKeyPressed = true;
-                    if (m_model->getCurrentLine() == 1) {
+                    if (m_model->getCurrentLine() == 2) {
                         m_render->window().close();
                     } else {
                         m_model->setCurrentLine(m_model->getCurrentLine() + 1);
@@ -49,8 +49,10 @@ void InsertLineMenuController::Run() {
                     int chosen_symbol;
                     if (m_model->getCurrentLine() == 0) {
                         chosen_symbol = (event.mouseButton.x - 8 * 22 - 10) / 22;
-                    } else{
+                    } else if (m_model->getCurrentLine() == 1) {
                         chosen_symbol = (event.mouseButton.x - 13 * 22 - 10) / 22;
+                    } else {
+                        chosen_symbol = (event.mouseButton.x - 3 * 22 - 10) / 22;
                     }
                     m_model->setCurrentLine(event.mouseButton.y / 45);
                     m_model->setCurrentCursorPosition(chosen_symbol);

@@ -16,6 +16,9 @@
 #include "InsertLineMenu/InsertLineMenuModel.h"
 #include "InsertLineMenu/InsertLineMenuRender.h"
 #include "InsertLineMenu/InsertLineMenuController.h"
+#include "InsertLinesMenu/InsertLinesMenuModel.h"
+#include "InsertLinesMenu/InsertLinesMenuRender.h"
+#include "InsertLinesMenu/InsertLinesMenuController.h"
 #include "iostream"
 #include "cmath"
 
@@ -125,6 +128,16 @@ void TextEditorController::Run() {
                         InsertLineMenuController controller(&model, &render);
                         controller.Run();
                         m_model->InsertLine(model.getPosToInsert() - 1, model.getStringToInsert());
+                    }
+                    if (event.key.code == sf::Keyboard::U){
+                        is_command_pressed = false;
+                        InsertLinesMenuModel model;
+                        InsertLinesMenuRender render(&model);
+                        InsertLinesMenuController controller(&model, &render);
+                        controller.Run();
+                        for (int i = 0; i < model.getNInserts(); ++i) {
+                            m_model->InsertLine(model.getPosToInsert() - 1 + i, model.getStringToInsert());
+                        }
                     }
                 }
             }
