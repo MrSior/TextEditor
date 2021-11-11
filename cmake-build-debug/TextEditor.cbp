@@ -124,6 +124,24 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertLineMenu/InsertLineMenuController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertLineMenu/InsertLineMenuController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertLineMenu/InsertLineMenuModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertLineMenu/InsertLineMenuModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertLineMenu/InsertLineMenuRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertLineMenu/InsertLineMenuRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

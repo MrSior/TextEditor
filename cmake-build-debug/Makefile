@@ -304,6 +304,87 @@ Finder/FinderRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Finder/FinderRender.cpp.s
 .PHONY : Finder/FinderRender.cpp.s
 
+InsertLineMenu/InsertLineMenuController.o: InsertLineMenu/InsertLineMenuController.cpp.o
+
+.PHONY : InsertLineMenu/InsertLineMenuController.o
+
+# target to build an object file
+InsertLineMenu/InsertLineMenuController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuController.cpp.o
+.PHONY : InsertLineMenu/InsertLineMenuController.cpp.o
+
+InsertLineMenu/InsertLineMenuController.i: InsertLineMenu/InsertLineMenuController.cpp.i
+
+.PHONY : InsertLineMenu/InsertLineMenuController.i
+
+# target to preprocess a source file
+InsertLineMenu/InsertLineMenuController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuController.cpp.i
+.PHONY : InsertLineMenu/InsertLineMenuController.cpp.i
+
+InsertLineMenu/InsertLineMenuController.s: InsertLineMenu/InsertLineMenuController.cpp.s
+
+.PHONY : InsertLineMenu/InsertLineMenuController.s
+
+# target to generate assembly for a file
+InsertLineMenu/InsertLineMenuController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuController.cpp.s
+.PHONY : InsertLineMenu/InsertLineMenuController.cpp.s
+
+InsertLineMenu/InsertLineMenuModel.o: InsertLineMenu/InsertLineMenuModel.cpp.o
+
+.PHONY : InsertLineMenu/InsertLineMenuModel.o
+
+# target to build an object file
+InsertLineMenu/InsertLineMenuModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuModel.cpp.o
+.PHONY : InsertLineMenu/InsertLineMenuModel.cpp.o
+
+InsertLineMenu/InsertLineMenuModel.i: InsertLineMenu/InsertLineMenuModel.cpp.i
+
+.PHONY : InsertLineMenu/InsertLineMenuModel.i
+
+# target to preprocess a source file
+InsertLineMenu/InsertLineMenuModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuModel.cpp.i
+.PHONY : InsertLineMenu/InsertLineMenuModel.cpp.i
+
+InsertLineMenu/InsertLineMenuModel.s: InsertLineMenu/InsertLineMenuModel.cpp.s
+
+.PHONY : InsertLineMenu/InsertLineMenuModel.s
+
+# target to generate assembly for a file
+InsertLineMenu/InsertLineMenuModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuModel.cpp.s
+.PHONY : InsertLineMenu/InsertLineMenuModel.cpp.s
+
+InsertLineMenu/InsertLineMenuRender.o: InsertLineMenu/InsertLineMenuRender.cpp.o
+
+.PHONY : InsertLineMenu/InsertLineMenuRender.o
+
+# target to build an object file
+InsertLineMenu/InsertLineMenuRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuRender.cpp.o
+.PHONY : InsertLineMenu/InsertLineMenuRender.cpp.o
+
+InsertLineMenu/InsertLineMenuRender.i: InsertLineMenu/InsertLineMenuRender.cpp.i
+
+.PHONY : InsertLineMenu/InsertLineMenuRender.i
+
+# target to preprocess a source file
+InsertLineMenu/InsertLineMenuRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuRender.cpp.i
+.PHONY : InsertLineMenu/InsertLineMenuRender.cpp.i
+
+InsertLineMenu/InsertLineMenuRender.s: InsertLineMenu/InsertLineMenuRender.cpp.s
+
+.PHONY : InsertLineMenu/InsertLineMenuRender.s
+
+# target to generate assembly for a file
+InsertLineMenu/InsertLineMenuRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuRender.cpp.s
+.PHONY : InsertLineMenu/InsertLineMenuRender.cpp.s
+
 SaveMenu/SaveMenuController.o: SaveMenu/SaveMenuController.cpp.o
 
 .PHONY : SaveMenu/SaveMenuController.o
@@ -520,6 +601,15 @@ help:
 	@echo "... Finder/FinderRender.o"
 	@echo "... Finder/FinderRender.i"
 	@echo "... Finder/FinderRender.s"
+	@echo "... InsertLineMenu/InsertLineMenuController.o"
+	@echo "... InsertLineMenu/InsertLineMenuController.i"
+	@echo "... InsertLineMenu/InsertLineMenuController.s"
+	@echo "... InsertLineMenu/InsertLineMenuModel.o"
+	@echo "... InsertLineMenu/InsertLineMenuModel.i"
+	@echo "... InsertLineMenu/InsertLineMenuModel.s"
+	@echo "... InsertLineMenu/InsertLineMenuRender.o"
+	@echo "... InsertLineMenu/InsertLineMenuRender.i"
+	@echo "... InsertLineMenu/InsertLineMenuRender.s"
 	@echo "... SaveMenu/SaveMenuController.o"
 	@echo "... SaveMenu/SaveMenuController.i"
 	@echo "... SaveMenu/SaveMenuController.s"

@@ -13,6 +13,9 @@
 #include "ContextualReplacementMenu/ContextualReplacementModel.h"
 #include "ContextualReplacementMenu/ContextualReplacementRender.h"
 #include "ContextualReplacementMenu/ContextualReplacementController.h"
+#include "InsertLineMenu/InsertLineMenuModel.h"
+#include "InsertLineMenu/InsertLineMenuRender.h"
+#include "InsertLineMenu/InsertLineMenuController.h"
 #include "iostream"
 #include "cmath"
 
@@ -114,6 +117,14 @@ void TextEditorController::Run() {
                         ContextualReplacementController controller(&model, &render);
                         controller.Run();
                         m_model->contextualReplacement(model.getFromString(), model.getToString());
+                    }
+                    if (event.key.code == sf::Keyboard::I){
+                        is_command_pressed = false;
+                        InsertLineMenuModel model;
+                        InsertLineMenuRender render(&model);
+                        InsertLineMenuController controller(&model, &render);
+                        controller.Run();
+                        m_model->InsertLine(model.getPosToInsert() - 1, model.getStringToInsert());
                     }
                 }
             }

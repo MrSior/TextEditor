@@ -61,7 +61,9 @@ void TextEditorModel::EraseLine(int n) {
 }
 
 void TextEditorModel::InsertLine(int pos, std::string line) {
-    linesText.insert(linesText.begin() + pos, line);
+    if (pos <= getLineCount()) {
+        linesText.insert(linesText.begin() + pos, line);
+    }
 }
 
 void TextEditorModel::setCurrentLine(int currentLine) {
