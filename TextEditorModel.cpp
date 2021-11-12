@@ -266,16 +266,22 @@ void TextEditorModel::collapseBrackets() {
 }
 
 void TextEditorModel::contextualReplacement(std::string fromString, std::string toString) {
-    int counter = 0;
     for(std::string& line : linesText){
-        auto itr = line.find(fromString);
-        while (itr != std::string::npos){
-            line.erase(itr, fromString.length());
-            line.insert(itr, toString);
-            itr = line.find(fromString);
+        for (int i = 0; i < int(line.length()) - int(fromString.length()) + 1; ++i) {
+            std::string str1 = line.substr(i, fromString.length());
+            if (str1 == fromString){
+                line.erase(i, fromString.length());
+                line.insert(i, toString);
+                if (toString.length() > fromString.length()){
+                    i += toString.length() - fromString.length();
+                } else {
+                    i += fromString.length() - toString.length();
+                    i--;
+                }
+            }
+            setCurrentCursorPosition(0);
+            checkProtrudingPart();
         }
-        checkProtrudingPart();
-        counter++;
     }
     checkProtrudingPart();
 }

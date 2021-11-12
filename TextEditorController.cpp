@@ -122,7 +122,9 @@ void TextEditorController::Run() {
                         ContextualReplacementRender render(&model);
                         ContextualReplacementController controller(&model, &render);
                         controller.Run();
-                        m_model->contextualReplacement(model.getFromString(), model.getToString());
+                        if(!model.getToString().empty() && !model.getToString().empty()) {
+                            m_model->contextualReplacement(model.getFromString(), model.getToString());
+                        }
                     }
                     if (event.key.code == sf::Keyboard::I){
                         is_command_pressed = false;
