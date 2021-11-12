@@ -19,6 +19,9 @@
 #include "InsertLinesMenu/InsertLinesMenuModel.h"
 #include "InsertLinesMenu/InsertLinesMenuRender.h"
 #include "InsertLinesMenu/InsertLinesMenuController.h"
+#include "EraseLineMenu/EraseLineMenuModel.h"
+#include "EraseLineMenu/EraseLineMenuRender.h"
+#include "EraseLineMenu/EraseLineMenuController.h"
 #include "iostream"
 #include "cmath"
 
@@ -127,7 +130,9 @@ void TextEditorController::Run() {
                         InsertLineMenuRender render(&model);
                         InsertLineMenuController controller(&model, &render);
                         controller.Run();
-                        m_model->InsertLine(model.getPosToInsert() - 1, model.getStringToInsert());
+                        if (model.getIsInsert()) {
+                            m_model->InsertLine(model.getPosToInsert() - 1, model.getStringToInsert());
+                        }
                     }
                     if (event.key.code == sf::Keyboard::U){
                         is_command_pressed = false;
@@ -135,8 +140,20 @@ void TextEditorController::Run() {
                         InsertLinesMenuRender render(&model);
                         InsertLinesMenuController controller(&model, &render);
                         controller.Run();
-                        for (int i = 0; i < model.getNInserts(); ++i) {
-                            m_model->InsertLine(model.getPosToInsert() - 1 + i, model.getStringToInsert());
+                        if (model.getIsInsert()) {
+                            for (int i = 0; i < model.getNInserts(); ++i) {
+                                m_model->InsertLine(model.getPosToInsert() - 1 + i, model.getStringToInsert());
+                            }
+                        }
+                    }
+                    if (event.key.code == sf::Keyboard::E){
+                        is_command_pressed = false;
+                        EraseLineMenuModel model;
+                        EraseLineMenuRender render(&model);
+                        EraseLineMenuController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsErase()){
+                            m_model->EraseLine(model.getLinePosition() - 1);
                         }
                     }
                 }

@@ -106,6 +106,24 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

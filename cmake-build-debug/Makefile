@@ -223,6 +223,87 @@ ContextualReplacementMenu/ContextualReplacementRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.s
 .PHONY : ContextualReplacementMenu/ContextualReplacementRender.cpp.s
 
+EraseLineMenu/EraseLineMenuController.o: EraseLineMenu/EraseLineMenuController.cpp.o
+
+.PHONY : EraseLineMenu/EraseLineMenuController.o
+
+# target to build an object file
+EraseLineMenu/EraseLineMenuController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o
+.PHONY : EraseLineMenu/EraseLineMenuController.cpp.o
+
+EraseLineMenu/EraseLineMenuController.i: EraseLineMenu/EraseLineMenuController.cpp.i
+
+.PHONY : EraseLineMenu/EraseLineMenuController.i
+
+# target to preprocess a source file
+EraseLineMenu/EraseLineMenuController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.i
+.PHONY : EraseLineMenu/EraseLineMenuController.cpp.i
+
+EraseLineMenu/EraseLineMenuController.s: EraseLineMenu/EraseLineMenuController.cpp.s
+
+.PHONY : EraseLineMenu/EraseLineMenuController.s
+
+# target to generate assembly for a file
+EraseLineMenu/EraseLineMenuController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.s
+.PHONY : EraseLineMenu/EraseLineMenuController.cpp.s
+
+EraseLineMenu/EraseLineMenuModel.o: EraseLineMenu/EraseLineMenuModel.cpp.o
+
+.PHONY : EraseLineMenu/EraseLineMenuModel.o
+
+# target to build an object file
+EraseLineMenu/EraseLineMenuModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o
+.PHONY : EraseLineMenu/EraseLineMenuModel.cpp.o
+
+EraseLineMenu/EraseLineMenuModel.i: EraseLineMenu/EraseLineMenuModel.cpp.i
+
+.PHONY : EraseLineMenu/EraseLineMenuModel.i
+
+# target to preprocess a source file
+EraseLineMenu/EraseLineMenuModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.i
+.PHONY : EraseLineMenu/EraseLineMenuModel.cpp.i
+
+EraseLineMenu/EraseLineMenuModel.s: EraseLineMenu/EraseLineMenuModel.cpp.s
+
+.PHONY : EraseLineMenu/EraseLineMenuModel.s
+
+# target to generate assembly for a file
+EraseLineMenu/EraseLineMenuModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.s
+.PHONY : EraseLineMenu/EraseLineMenuModel.cpp.s
+
+EraseLineMenu/EraseLineMenuRender.o: EraseLineMenu/EraseLineMenuRender.cpp.o
+
+.PHONY : EraseLineMenu/EraseLineMenuRender.o
+
+# target to build an object file
+EraseLineMenu/EraseLineMenuRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o
+.PHONY : EraseLineMenu/EraseLineMenuRender.cpp.o
+
+EraseLineMenu/EraseLineMenuRender.i: EraseLineMenu/EraseLineMenuRender.cpp.i
+
+.PHONY : EraseLineMenu/EraseLineMenuRender.i
+
+# target to preprocess a source file
+EraseLineMenu/EraseLineMenuRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.i
+.PHONY : EraseLineMenu/EraseLineMenuRender.cpp.i
+
+EraseLineMenu/EraseLineMenuRender.s: EraseLineMenu/EraseLineMenuRender.cpp.s
+
+.PHONY : EraseLineMenu/EraseLineMenuRender.s
+
+# target to generate assembly for a file
+EraseLineMenu/EraseLineMenuRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.s
+.PHONY : EraseLineMenu/EraseLineMenuRender.cpp.s
+
 Finder/FinderController.o: Finder/FinderController.cpp.o
 
 .PHONY : Finder/FinderController.o
@@ -673,6 +754,15 @@ help:
 	@echo "... ContextualReplacementMenu/ContextualReplacementRender.o"
 	@echo "... ContextualReplacementMenu/ContextualReplacementRender.i"
 	@echo "... ContextualReplacementMenu/ContextualReplacementRender.s"
+	@echo "... EraseLineMenu/EraseLineMenuController.o"
+	@echo "... EraseLineMenu/EraseLineMenuController.i"
+	@echo "... EraseLineMenu/EraseLineMenuController.s"
+	@echo "... EraseLineMenu/EraseLineMenuModel.o"
+	@echo "... EraseLineMenu/EraseLineMenuModel.i"
+	@echo "... EraseLineMenu/EraseLineMenuModel.s"
+	@echo "... EraseLineMenu/EraseLineMenuRender.o"
+	@echo "... EraseLineMenu/EraseLineMenuRender.i"
+	@echo "... EraseLineMenu/EraseLineMenuRender.s"
 	@echo "... Finder/FinderController.o"
 	@echo "... Finder/FinderController.i"
 	@echo "... Finder/FinderController.s"

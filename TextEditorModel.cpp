@@ -57,7 +57,15 @@ void TextEditorModel::SaveCurrentText(std::string name) {
 }
 
 void TextEditorModel::EraseLine(int n) {
+    if (n >= getLineCount()) return;
     linesText.erase(linesText.begin() + n);
+    if (n <= current_line){
+        setCurrentLine(getCurrentLine() - 1);
+    }
+    if (getLineCount() == 0){
+        InsertLine(0, "");
+        setCurrentCursorPosition(0);
+    }
 }
 
 void TextEditorModel::InsertLine(int pos, std::string line) {

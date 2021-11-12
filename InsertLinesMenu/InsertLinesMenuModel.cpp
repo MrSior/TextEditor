@@ -15,6 +15,7 @@ void InsertLinesMenuModel::init() {
     current_cursor_pos = 0;
     current_line = 0;
     max_symbols_in_line = 30;
+    is_insert = false;
 }
 
 void InsertLinesMenuModel::insertSymbol(char symbol) {
@@ -75,4 +76,12 @@ std::string InsertLinesMenuModel::getNInsertsString() {
 
 int InsertLinesMenuModel::getNInserts() {
     return std::stoi(line_n_pos[2]);
+}
+
+bool InsertLinesMenuModel::getIsInsert() {
+    return is_insert;
+}
+
+void InsertLinesMenuModel::setIsInsert(bool isInsert) {
+    is_insert = isInsert;
 }

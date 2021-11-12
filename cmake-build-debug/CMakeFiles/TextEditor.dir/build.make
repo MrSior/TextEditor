@@ -323,6 +323,45 @@ CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/InsertLinesMenu/InsertLinesMenuController.cpp -o CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.s
 
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o: ../EraseLineMenu/EraseLineMenuModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuModel.cpp
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuModel.cpp > CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.i
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuModel.cpp -o CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.s
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o: ../EraseLineMenu/EraseLineMenuRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuRender.cpp
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuRender.cpp > CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.i
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuRender.cpp -o CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.s
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o: ../EraseLineMenu/EraseLineMenuController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuController.cpp
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuController.cpp > CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.i
+
+CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuController.cpp -o CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.s
+
 # Object files for target TextEditor
 TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/main.cpp.o" \
@@ -343,7 +382,10 @@ TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuController.cpp.o" \
 "CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuModel.cpp.o" \
 "CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuRender.cpp.o" \
-"CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.o"
+"CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.o" \
+"CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o" \
+"CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o" \
+"CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o"
 
 # External object files for target TextEditor
 TextEditor_EXTERNAL_OBJECTS =
@@ -367,6 +409,9 @@ TextEditor: CMakeFiles/TextEditor.dir/InsertLineMenu/InsertLineMenuController.cp
 TextEditor: CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuModel.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuRender.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/build.make
 TextEditor: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 TextEditor: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
@@ -375,7 +420,7 @@ TextEditor: /usr/local/lib/libboost_system-mt.dylib
 TextEditor: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 TextEditor: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 TextEditor: CMakeFiles/TextEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable TextEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable TextEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TextEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

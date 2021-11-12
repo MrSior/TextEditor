@@ -14,6 +14,7 @@ private:
     int current_cursor_pos;
     int current_line;
     int max_symbols_in_line;
+    bool is_insert;
 public:
     InsertLineMenuModel();
     void init();
@@ -26,6 +27,8 @@ public:
     std::string getStringToInsert();
     std::string getPosToInsertString();
     int getPosToInsert();
+    void setIsInsert(bool isInsert);
+    bool getIsInsert();
 };
 
 

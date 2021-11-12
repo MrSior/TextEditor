@@ -21,6 +21,9 @@ void InsertLineMenuController::Run() {
                 if (event.key.code == sf::Keyboard::Enter){
                     isSystemKeyPressed = true;
                     if (m_model->getCurrentLine() == 1) {
+                        if (!m_model->getStringToInsert().empty() && !m_model->getPosToInsertString().empty()){
+                            m_model->setIsInsert(true);
+                        }
                         m_render->window().close();
                     } else {
                         m_model->setCurrentLine(m_model->getCurrentLine() + 1);
@@ -58,7 +61,11 @@ void InsertLineMenuController::Run() {
             }
             if (event.type == sf::Event::TextEntered){
                 if (!isSystemKeyPressed) {
-                    m_model->insertSymbol(char(event.text.unicode));
+                    if (m_model->getCurrentLine() != 0 && isdigit(char(event.text.unicode))) {
+                        m_model->insertSymbol(char(event.text.unicode));
+                    } else if (m_model->getCurrentLine() == 0) {
+                        m_model->insertSymbol(char(event.text.unicode));
+                    }
                 } else{
                     isSystemKeyPressed = false;
                 }
