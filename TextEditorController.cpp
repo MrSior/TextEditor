@@ -22,6 +22,9 @@
 #include "EraseLineMenu/EraseLineMenuModel.h"
 #include "EraseLineMenu/EraseLineMenuRender.h"
 #include "EraseLineMenu/EraseLineMenuController.h"
+#include "InsertSubstrMenu/InsertSubstrMenuModel.h"
+#include "InsertSubstrMenu/InsertSubstrMenuRender.h"
+#include "InsertSubstrMenu/InsertSubstrMenuController.h"
 #include "iostream"
 #include "cmath"
 
@@ -156,6 +159,18 @@ void TextEditorController::Run() {
                         controller.Run();
                         if (model.getIsErase()){
                             m_model->EraseLine(model.getLinePosition() - 1);
+                        }
+                    }
+                    if (event.key.code == sf::Keyboard::B){
+                        is_command_pressed = false;
+                        InsertSubstrMenuModel model;
+                        InsertSubstrMenuRender render(&model);
+                        InsertSubstrMenuController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsInsert()){
+                            m_model->insertSubstrAtLineAtPos(model.getStringToInsert(),
+                                                             model.getNInsert() - 1,
+                                                             model.getPosToInsert() - 1);
                         }
                     }
                 }

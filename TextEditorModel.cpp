@@ -285,3 +285,15 @@ void TextEditorModel::contextualReplacement(std::string fromString, std::string 
     }
     checkProtrudingPart();
 }
+
+void TextEditorModel::insertSubstrAtLineAtPos(std::string substr, int line_number, int pos) {
+    if (linesText.size() <= line_number || pos > linesText[line_number].length()){
+        return;
+    }
+    linesText[line_number].insert(pos, substr);
+    if(line_number == current_cursor_position){
+        setCurrentCursorPosition(0);
+    }
+    checkProtrudingPart();
+    checkProtrudingPart();
+}

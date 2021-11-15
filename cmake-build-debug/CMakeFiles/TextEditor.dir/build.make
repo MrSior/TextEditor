@@ -362,6 +362,45 @@ CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuController.cpp -o CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.s
 
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o: ../InsertSubstrMenu/InsertSubstrMenuModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuModel.cpp
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuModel.cpp > CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.i
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuModel.cpp -o CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.s
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o: ../InsertSubstrMenu/InsertSubstrMenuRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuRender.cpp
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuRender.cpp > CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.i
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuRender.cpp -o CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.s
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o: ../InsertSubstrMenu/InsertSubstrMenuController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuController.cpp
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuController.cpp > CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.i
+
+CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuController.cpp -o CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.s
+
 # Object files for target TextEditor
 TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/main.cpp.o" \
@@ -385,7 +424,10 @@ TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.cpp.o" \
 "CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o" \
 "CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o" \
-"CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o"
+"CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o" \
+"CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o" \
+"CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o" \
+"CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o"
 
 # External object files for target TextEditor
 TextEditor_EXTERNAL_OBJECTS =
@@ -412,6 +454,9 @@ TextEditor: CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuController.
 TextEditor: CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuModel.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/build.make
 TextEditor: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 TextEditor: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
@@ -420,7 +465,7 @@ TextEditor: /usr/local/lib/libboost_system-mt.dylib
 TextEditor: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 TextEditor: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 TextEditor: CMakeFiles/TextEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable TextEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable TextEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TextEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

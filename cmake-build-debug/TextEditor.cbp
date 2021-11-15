@@ -178,6 +178,24 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertLinesMenu/InsertLinesMenuRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/SaveMenu/SaveMenuController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

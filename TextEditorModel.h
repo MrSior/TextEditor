@@ -25,6 +25,7 @@ public:
     void InsertLine(int pos, std::string line);
     void setCurrentLine(int currentLine);
     void insertSymbol(char symbol);
+    void insertSubstrAtLineAtPos(std::string substr, int line_number, int pos);
     void eraseSymbol();
     void lineBreak();
     void setCurrentCursorPosition(int pos);

@@ -547,6 +547,87 @@ InsertLinesMenu/InsertLinesMenuRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertLinesMenu/InsertLinesMenuRender.cpp.s
 .PHONY : InsertLinesMenu/InsertLinesMenuRender.cpp.s
 
+InsertSubstrMenu/InsertSubstrMenuController.o: InsertSubstrMenu/InsertSubstrMenuController.cpp.o
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuController.o
+
+# target to build an object file
+InsertSubstrMenu/InsertSubstrMenuController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o
+.PHONY : InsertSubstrMenu/InsertSubstrMenuController.cpp.o
+
+InsertSubstrMenu/InsertSubstrMenuController.i: InsertSubstrMenu/InsertSubstrMenuController.cpp.i
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuController.i
+
+# target to preprocess a source file
+InsertSubstrMenu/InsertSubstrMenuController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.i
+.PHONY : InsertSubstrMenu/InsertSubstrMenuController.cpp.i
+
+InsertSubstrMenu/InsertSubstrMenuController.s: InsertSubstrMenu/InsertSubstrMenuController.cpp.s
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuController.s
+
+# target to generate assembly for a file
+InsertSubstrMenu/InsertSubstrMenuController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.s
+.PHONY : InsertSubstrMenu/InsertSubstrMenuController.cpp.s
+
+InsertSubstrMenu/InsertSubstrMenuModel.o: InsertSubstrMenu/InsertSubstrMenuModel.cpp.o
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuModel.o
+
+# target to build an object file
+InsertSubstrMenu/InsertSubstrMenuModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o
+.PHONY : InsertSubstrMenu/InsertSubstrMenuModel.cpp.o
+
+InsertSubstrMenu/InsertSubstrMenuModel.i: InsertSubstrMenu/InsertSubstrMenuModel.cpp.i
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuModel.i
+
+# target to preprocess a source file
+InsertSubstrMenu/InsertSubstrMenuModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.i
+.PHONY : InsertSubstrMenu/InsertSubstrMenuModel.cpp.i
+
+InsertSubstrMenu/InsertSubstrMenuModel.s: InsertSubstrMenu/InsertSubstrMenuModel.cpp.s
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuModel.s
+
+# target to generate assembly for a file
+InsertSubstrMenu/InsertSubstrMenuModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.s
+.PHONY : InsertSubstrMenu/InsertSubstrMenuModel.cpp.s
+
+InsertSubstrMenu/InsertSubstrMenuRender.o: InsertSubstrMenu/InsertSubstrMenuRender.cpp.o
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuRender.o
+
+# target to build an object file
+InsertSubstrMenu/InsertSubstrMenuRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o
+.PHONY : InsertSubstrMenu/InsertSubstrMenuRender.cpp.o
+
+InsertSubstrMenu/InsertSubstrMenuRender.i: InsertSubstrMenu/InsertSubstrMenuRender.cpp.i
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuRender.i
+
+# target to preprocess a source file
+InsertSubstrMenu/InsertSubstrMenuRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.i
+.PHONY : InsertSubstrMenu/InsertSubstrMenuRender.cpp.i
+
+InsertSubstrMenu/InsertSubstrMenuRender.s: InsertSubstrMenu/InsertSubstrMenuRender.cpp.s
+
+.PHONY : InsertSubstrMenu/InsertSubstrMenuRender.s
+
+# target to generate assembly for a file
+InsertSubstrMenu/InsertSubstrMenuRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.s
+.PHONY : InsertSubstrMenu/InsertSubstrMenuRender.cpp.s
+
 SaveMenu/SaveMenuController.o: SaveMenu/SaveMenuController.cpp.o
 
 .PHONY : SaveMenu/SaveMenuController.o
@@ -790,6 +871,15 @@ help:
 	@echo "... InsertLinesMenu/InsertLinesMenuRender.o"
 	@echo "... InsertLinesMenu/InsertLinesMenuRender.i"
 	@echo "... InsertLinesMenu/InsertLinesMenuRender.s"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuController.o"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuController.i"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuController.s"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuModel.o"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuModel.i"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuModel.s"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuRender.o"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuRender.i"
+	@echo "... InsertSubstrMenu/InsertSubstrMenuRender.s"
 	@echo "... SaveMenu/SaveMenuController.o"
 	@echo "... SaveMenu/SaveMenuController.i"
 	@echo "... SaveMenu/SaveMenuController.s"
