@@ -142,6 +142,87 @@ TextEditor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/build
 .PHONY : TextEditor/fast
 
+ChangeSymbolMenu/ChangeSymbolController.o: ChangeSymbolMenu/ChangeSymbolController.cpp.o
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolController.o
+
+# target to build an object file
+ChangeSymbolMenu/ChangeSymbolController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o
+.PHONY : ChangeSymbolMenu/ChangeSymbolController.cpp.o
+
+ChangeSymbolMenu/ChangeSymbolController.i: ChangeSymbolMenu/ChangeSymbolController.cpp.i
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolController.i
+
+# target to preprocess a source file
+ChangeSymbolMenu/ChangeSymbolController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.i
+.PHONY : ChangeSymbolMenu/ChangeSymbolController.cpp.i
+
+ChangeSymbolMenu/ChangeSymbolController.s: ChangeSymbolMenu/ChangeSymbolController.cpp.s
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolController.s
+
+# target to generate assembly for a file
+ChangeSymbolMenu/ChangeSymbolController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.s
+.PHONY : ChangeSymbolMenu/ChangeSymbolController.cpp.s
+
+ChangeSymbolMenu/ChangeSymbolModel.o: ChangeSymbolMenu/ChangeSymbolModel.cpp.o
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolModel.o
+
+# target to build an object file
+ChangeSymbolMenu/ChangeSymbolModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o
+.PHONY : ChangeSymbolMenu/ChangeSymbolModel.cpp.o
+
+ChangeSymbolMenu/ChangeSymbolModel.i: ChangeSymbolMenu/ChangeSymbolModel.cpp.i
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolModel.i
+
+# target to preprocess a source file
+ChangeSymbolMenu/ChangeSymbolModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.i
+.PHONY : ChangeSymbolMenu/ChangeSymbolModel.cpp.i
+
+ChangeSymbolMenu/ChangeSymbolModel.s: ChangeSymbolMenu/ChangeSymbolModel.cpp.s
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolModel.s
+
+# target to generate assembly for a file
+ChangeSymbolMenu/ChangeSymbolModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.s
+.PHONY : ChangeSymbolMenu/ChangeSymbolModel.cpp.s
+
+ChangeSymbolMenu/ChangeSymbolRender.o: ChangeSymbolMenu/ChangeSymbolRender.cpp.o
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolRender.o
+
+# target to build an object file
+ChangeSymbolMenu/ChangeSymbolRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o
+.PHONY : ChangeSymbolMenu/ChangeSymbolRender.cpp.o
+
+ChangeSymbolMenu/ChangeSymbolRender.i: ChangeSymbolMenu/ChangeSymbolRender.cpp.i
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolRender.i
+
+# target to preprocess a source file
+ChangeSymbolMenu/ChangeSymbolRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.i
+.PHONY : ChangeSymbolMenu/ChangeSymbolRender.cpp.i
+
+ChangeSymbolMenu/ChangeSymbolRender.s: ChangeSymbolMenu/ChangeSymbolRender.cpp.s
+
+.PHONY : ChangeSymbolMenu/ChangeSymbolRender.s
+
+# target to generate assembly for a file
+ChangeSymbolMenu/ChangeSymbolRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.s
+.PHONY : ChangeSymbolMenu/ChangeSymbolRender.cpp.s
+
 ContextualReplacementMenu/ContextualReplacementController.o: ContextualReplacementMenu/ContextualReplacementController.cpp.o
 
 .PHONY : ContextualReplacementMenu/ContextualReplacementController.o
@@ -826,6 +907,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TextEditor"
+	@echo "... ChangeSymbolMenu/ChangeSymbolController.o"
+	@echo "... ChangeSymbolMenu/ChangeSymbolController.i"
+	@echo "... ChangeSymbolMenu/ChangeSymbolController.s"
+	@echo "... ChangeSymbolMenu/ChangeSymbolModel.o"
+	@echo "... ChangeSymbolMenu/ChangeSymbolModel.i"
+	@echo "... ChangeSymbolMenu/ChangeSymbolModel.s"
+	@echo "... ChangeSymbolMenu/ChangeSymbolRender.o"
+	@echo "... ChangeSymbolMenu/ChangeSymbolRender.i"
+	@echo "... ChangeSymbolMenu/ChangeSymbolRender.s"
 	@echo "... ContextualReplacementMenu/ContextualReplacementController.o"
 	@echo "... ContextualReplacementMenu/ContextualReplacementController.i"
 	@echo "... ContextualReplacementMenu/ContextualReplacementController.s"

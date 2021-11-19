@@ -25,6 +25,9 @@
 #include "InsertSubstrMenu/InsertSubstrMenuModel.h"
 #include "InsertSubstrMenu/InsertSubstrMenuRender.h"
 #include "InsertSubstrMenu/InsertSubstrMenuController.h"
+#include "ChangeSymbolMenu/ChangeSymbolModel.h"
+#include "ChangeSymbolMenu/ChangeSymbolRender.h"
+#include "ChangeSymbolMenu/ChangeSymbolController.h"
 #include "iostream"
 #include "cmath"
 
@@ -171,6 +174,18 @@ void TextEditorController::Run() {
                             m_model->insertSubstrAtLineAtPos(model.getStringToInsert(),
                                                              model.getNInsert() - 1,
                                                              model.getPosToInsert() - 1);
+                        }
+                    }
+                    if (event.key.code == sf::Keyboard::T){
+                        is_command_pressed = false;
+                        ChangeSymbolModel model;
+                        ChangeSymbolRender render(&model);
+                        ChangeSymbolController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsInsert()){
+                            m_model->ChangeSymbol(model.getNInsert() -1,
+                                                  model.getPosToInsert() -1,
+                                                  model.getStringToInsert()[0]);
                         }
                     }
                 }

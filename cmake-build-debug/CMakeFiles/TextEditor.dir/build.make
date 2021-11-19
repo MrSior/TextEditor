@@ -401,6 +401,45 @@ CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/InsertSubstrMenu/InsertSubstrMenuController.cpp -o CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.s
 
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o: ../ChangeSymbolMenu/ChangeSymbolModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolModel.cpp
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolModel.cpp > CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.i
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolModel.cpp -o CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.s
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o: ../ChangeSymbolMenu/ChangeSymbolRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolRender.cpp
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolRender.cpp > CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.i
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolRender.cpp -o CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.s
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o: ../ChangeSymbolMenu/ChangeSymbolController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolController.cpp
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolController.cpp > CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.i
+
+CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolController.cpp -o CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.s
+
 # Object files for target TextEditor
 TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/main.cpp.o" \
@@ -427,7 +466,10 @@ TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.o" \
 "CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o" \
 "CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o" \
-"CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o"
+"CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o" \
+"CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o" \
+"CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o" \
+"CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o"
 
 # External object files for target TextEditor
 TextEditor_EXTERNAL_OBJECTS =
@@ -457,6 +499,9 @@ TextEditor: CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuController.cpp.
 TextEditor: CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuModel.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuRender.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/InsertSubstrMenu/InsertSubstrMenuController.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/build.make
 TextEditor: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 TextEditor: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
@@ -465,7 +510,7 @@ TextEditor: /usr/local/lib/libboost_system-mt.dylib
 TextEditor: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 TextEditor: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 TextEditor: CMakeFiles/TextEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable TextEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable TextEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TextEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

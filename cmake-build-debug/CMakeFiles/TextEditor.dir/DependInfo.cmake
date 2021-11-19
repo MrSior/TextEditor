@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolController.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o"
+  "/Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolModel.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o"
+  "/Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolRender.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementController.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementController.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementModel.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementModel.cpp.o"
   "/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementRender.cpp" "/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.o"

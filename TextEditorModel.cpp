@@ -297,3 +297,13 @@ void TextEditorModel::insertSubstrAtLineAtPos(std::string substr, int line_numbe
     checkProtrudingPart();
     checkProtrudingPart();
 }
+
+void TextEditorModel::ChangeSymbol(int line, int pos, char value) {
+    if (line >= linesText.size()){
+        return;
+    }
+    if (linesText[line].length() <= pos){
+        return;
+    }
+    linesText[line][pos] = value;
+}

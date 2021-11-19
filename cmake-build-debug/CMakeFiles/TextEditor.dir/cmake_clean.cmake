@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o"
+  "CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolModel.cpp.o"
+  "CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.o"
   "CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementController.cpp.o"
   "CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementModel.cpp.o"
   "CMakeFiles/TextEditor.dir/ContextualReplacementMenu/ContextualReplacementRender.cpp.o"

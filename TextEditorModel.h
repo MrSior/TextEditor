@@ -40,6 +40,7 @@ public:
     void resetLines(bool isWindowSmaller, int prev_max_symbols_in_line);
     void collapseBrackets();
     void contextualReplacement(std::string fromString, std::string toString);
+    void ChangeSymbol(int line, int pos, char value);
 };
 
 #endif //TEXTEDITOR_TEXTEDITORMODEL_H
