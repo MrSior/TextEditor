@@ -385,6 +385,87 @@ EraseLineMenu/EraseLineMenuRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseLineMenu/EraseLineMenuRender.cpp.s
 .PHONY : EraseLineMenu/EraseLineMenuRender.cpp.s
 
+EraseStarsMenu/EraseStarsMenuController.o: EraseStarsMenu/EraseStarsMenuController.cpp.o
+
+.PHONY : EraseStarsMenu/EraseStarsMenuController.o
+
+# target to build an object file
+EraseStarsMenu/EraseStarsMenuController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.o
+.PHONY : EraseStarsMenu/EraseStarsMenuController.cpp.o
+
+EraseStarsMenu/EraseStarsMenuController.i: EraseStarsMenu/EraseStarsMenuController.cpp.i
+
+.PHONY : EraseStarsMenu/EraseStarsMenuController.i
+
+# target to preprocess a source file
+EraseStarsMenu/EraseStarsMenuController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.i
+.PHONY : EraseStarsMenu/EraseStarsMenuController.cpp.i
+
+EraseStarsMenu/EraseStarsMenuController.s: EraseStarsMenu/EraseStarsMenuController.cpp.s
+
+.PHONY : EraseStarsMenu/EraseStarsMenuController.s
+
+# target to generate assembly for a file
+EraseStarsMenu/EraseStarsMenuController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.s
+.PHONY : EraseStarsMenu/EraseStarsMenuController.cpp.s
+
+EraseStarsMenu/EraseStarsMenuModel.o: EraseStarsMenu/EraseStarsMenuModel.cpp.o
+
+.PHONY : EraseStarsMenu/EraseStarsMenuModel.o
+
+# target to build an object file
+EraseStarsMenu/EraseStarsMenuModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuModel.cpp.o
+.PHONY : EraseStarsMenu/EraseStarsMenuModel.cpp.o
+
+EraseStarsMenu/EraseStarsMenuModel.i: EraseStarsMenu/EraseStarsMenuModel.cpp.i
+
+.PHONY : EraseStarsMenu/EraseStarsMenuModel.i
+
+# target to preprocess a source file
+EraseStarsMenu/EraseStarsMenuModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuModel.cpp.i
+.PHONY : EraseStarsMenu/EraseStarsMenuModel.cpp.i
+
+EraseStarsMenu/EraseStarsMenuModel.s: EraseStarsMenu/EraseStarsMenuModel.cpp.s
+
+.PHONY : EraseStarsMenu/EraseStarsMenuModel.s
+
+# target to generate assembly for a file
+EraseStarsMenu/EraseStarsMenuModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuModel.cpp.s
+.PHONY : EraseStarsMenu/EraseStarsMenuModel.cpp.s
+
+EraseStarsMenu/EraseStarsMenuRender.o: EraseStarsMenu/EraseStarsMenuRender.cpp.o
+
+.PHONY : EraseStarsMenu/EraseStarsMenuRender.o
+
+# target to build an object file
+EraseStarsMenu/EraseStarsMenuRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuRender.cpp.o
+.PHONY : EraseStarsMenu/EraseStarsMenuRender.cpp.o
+
+EraseStarsMenu/EraseStarsMenuRender.i: EraseStarsMenu/EraseStarsMenuRender.cpp.i
+
+.PHONY : EraseStarsMenu/EraseStarsMenuRender.i
+
+# target to preprocess a source file
+EraseStarsMenu/EraseStarsMenuRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuRender.cpp.i
+.PHONY : EraseStarsMenu/EraseStarsMenuRender.cpp.i
+
+EraseStarsMenu/EraseStarsMenuRender.s: EraseStarsMenu/EraseStarsMenuRender.cpp.s
+
+.PHONY : EraseStarsMenu/EraseStarsMenuRender.s
+
+# target to generate assembly for a file
+EraseStarsMenu/EraseStarsMenuRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuRender.cpp.s
+.PHONY : EraseStarsMenu/EraseStarsMenuRender.cpp.s
+
 Finder/FinderController.o: Finder/FinderController.cpp.o
 
 .PHONY : Finder/FinderController.o
@@ -934,6 +1015,15 @@ help:
 	@echo "... EraseLineMenu/EraseLineMenuRender.o"
 	@echo "... EraseLineMenu/EraseLineMenuRender.i"
 	@echo "... EraseLineMenu/EraseLineMenuRender.s"
+	@echo "... EraseStarsMenu/EraseStarsMenuController.o"
+	@echo "... EraseStarsMenu/EraseStarsMenuController.i"
+	@echo "... EraseStarsMenu/EraseStarsMenuController.s"
+	@echo "... EraseStarsMenu/EraseStarsMenuModel.o"
+	@echo "... EraseStarsMenu/EraseStarsMenuModel.i"
+	@echo "... EraseStarsMenu/EraseStarsMenuModel.s"
+	@echo "... EraseStarsMenu/EraseStarsMenuRender.o"
+	@echo "... EraseStarsMenu/EraseStarsMenuRender.i"
+	@echo "... EraseStarsMenu/EraseStarsMenuRender.s"
 	@echo "... Finder/FinderController.o"
 	@echo "... Finder/FinderController.i"
 	@echo "... Finder/FinderController.s"

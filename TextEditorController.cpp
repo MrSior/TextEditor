@@ -28,6 +28,9 @@
 #include "ChangeSymbolMenu/ChangeSymbolModel.h"
 #include "ChangeSymbolMenu/ChangeSymbolRender.h"
 #include "ChangeSymbolMenu/ChangeSymbolController.h"
+#include "EraseStarsMenu/EraseStarsMenuController.h"
+#include "EraseStarsMenu/EraseStarsMenuRender.h"
+#include "EraseStarsMenu/EraseStarsMenuModel.h"
 #include "iostream"
 #include "cmath"
 
@@ -195,6 +198,16 @@ void TextEditorController::Run() {
                     if (event.key.code == sf::Keyboard::Comma){
                         is_command_pressed = false;
                         m_model->EraseNonIncreasingSequence();
+                    }
+                    if (event.key.code == sf::Keyboard::Num8){
+                        is_command_pressed = false;
+                        EraseStarsMenuModel model;
+                        EraseStarsMenuRender render(&model);
+                        EraseStarsMenuController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsChosen()){
+                            m_model->EraseStars(model.getLength());
+                        }
                     }
                 }
             }

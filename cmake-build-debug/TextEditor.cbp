@@ -142,6 +142,24 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseLineMenu/EraseLineMenuRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

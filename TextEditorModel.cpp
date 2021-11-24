@@ -360,3 +360,27 @@ void TextEditorModel::EraseNonIncreasingSequence() {
         }
     }
 }
+
+void TextEditorModel::EraseStars(int length) {
+    if (length == 1) return;
+    std::string str;
+    std::string str_to_insert;
+    for (int i = 0; i < length; ++i) {
+        str.push_back('*');
+        if (i < length / 2){
+            str_to_insert.push_back('*');
+        }
+    }
+    for (int i = 0; i < linesText.size(); ++i) {
+        std::string& line = linesText[i];
+        auto itr = line.find(str);
+        while (itr != std::string::npos){
+            line.erase(itr, length);
+            line.insert(itr, str_to_insert);
+            itr = line.find(str);
+        }
+        if(i == getCurrentLine()){
+            setCurrentCursorPosition(0);
+        }
+    }
+}

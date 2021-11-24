@@ -1,15 +1,15 @@
 //
-// Created by Семён Чубенко on 30.10.2021.
+// Created by Семён Чубенко on 24.11.2021.
 //
 
-#include "SaveMenuController.h"
+#include "EraseStarsMenuController.h"
 
-SaveMenuController::SaveMenuController(SaveMenuModel *model, SaveMenuRender *render) {
+EraseStarsMenuController::EraseStarsMenuController(EraseStarsMenuModel *model, EraseStarsMenuRender *render) {
     m_model = model;
     m_render = render;
 }
 
-void SaveMenuController::Run() {
+void EraseStarsMenuController::Run() {
     sf::Event event;
     bool isSystemKeyPressed = false;
     while (m_render->window().isOpen()){
@@ -18,8 +18,8 @@ void SaveMenuController::Run() {
                 m_render->window().close();
             }
             if (event.type == sf::Event::KeyPressed){
-                if (event.key.code == sf::Keyboard::Enter && !m_model->getFileName().empty()){
-                    m_model->setIsSaved(true);
+                if (event.key.code == sf::Keyboard::Enter && !m_model->getLengthString().empty()){
+                    m_model->setIsChosen(true);
                     m_render->window().close();
                 }
                 if (event.key.code == sf::Keyboard::BackSpace){
@@ -35,12 +35,12 @@ void SaveMenuController::Run() {
             }
             if (event.type == sf::Event::MouseButtonPressed){
                 if (event.mouseButton.button == sf::Mouse::Left){
-                    int chosen_symbol = (event.mouseButton.x - 252) / 22;
+                    int chosen_symbol = (event.mouseButton.x - 3 * 22 - 10) / 22;
                     m_model->setCurrentCursorPosition(chosen_symbol);
                 }
             }
             if (event.type == sf::Event::TextEntered){
-                if (!isSystemKeyPressed) {
+                if (!isSystemKeyPressed && isdigit(char(event.text.unicode))) {
                     m_model->insertSymbol(char(event.text.unicode));
                 } else{
                     isSystemKeyPressed = false;

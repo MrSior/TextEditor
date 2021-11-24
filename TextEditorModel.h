@@ -43,6 +43,7 @@ public:
     void ChangeSymbol(int line, int pos, char value);
     void EraseZeroes();
     void EraseNonIncreasingSequence();
+    void EraseStars(int length);
 };
 
 #endif //TEXTEDITOR_TEXTEDITORMODEL_H
