@@ -192,6 +192,10 @@ void TextEditorController::Run() {
                         is_command_pressed = false;
                         m_model->EraseZeroes();
                     }
+                    if (event.key.code == sf::Keyboard::Comma){
+                        is_command_pressed = false;
+                        m_model->EraseNonIncreasingSequence();
+                    }
                 }
             }
             if (event.type == sf::Event::MouseWheelScrolled){

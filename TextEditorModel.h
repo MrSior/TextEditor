@@ -42,6 +42,7 @@ public:
     void contextualReplacement(std::string fromString, std::string toString);
     void ChangeSymbol(int line, int pos, char value);
     void EraseZeroes();
+    void EraseNonIncreasingSequence();
 };
 
 #endif //TEXTEDITOR_TEXTEDITORMODEL_H
