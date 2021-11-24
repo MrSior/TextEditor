@@ -41,6 +41,7 @@ public:
     void collapseBrackets();
     void contextualReplacement(std::string fromString, std::string toString);
     void ChangeSymbol(int line, int pos, char value);
+    void EraseZeroes();
 };
 
 #endif //TEXTEDITOR_TEXTEDITORMODEL_H

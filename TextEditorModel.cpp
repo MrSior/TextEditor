@@ -307,3 +307,34 @@ void TextEditorModel::ChangeSymbol(int line, int pos, char value) {
     }
     linesText[line][pos] = value;
 }
+
+void TextEditorModel::EraseZeroes() {
+    for(int j = 0; j < linesText.size(); ++j){
+        std::string& line = linesText[j];
+        int start_length = line.length();
+        int start_index = -1;
+        int end_index;
+        for (int i = 0; i < line.length(); ++i) {
+            if (line[i] == '0'){
+                if (start_index == -1){
+                    start_index = i;
+                    end_index = i;
+                } else{
+                    end_index++;
+                }
+            } else if(start_index != -1 && start_index != end_index){
+                line.erase(start_index, end_index - start_index);
+                start_index = -1;
+            } else {
+                start_index = -1;
+            }
+        }
+        if(start_index != -1 && start_index != end_index){
+            line.erase(start_index, end_index - start_index);
+            start_index = -1;
+        }
+        if (j == getCurrentLine()) {
+            setCurrentCursorPosition(getCurrentCursorPosition() - (start_length - line.length()));
+        }
+    }
+}

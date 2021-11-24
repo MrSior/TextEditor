@@ -188,6 +188,10 @@ void TextEditorController::Run() {
                                                   model.getStringToInsert()[0]);
                         }
                     }
+                    if (event.key.code == sf::Keyboard::Num0){
+                        is_command_pressed = false;
+                        m_model->EraseZeroes();
+                    }
                 }
             }
             if (event.type == sf::Event::MouseWheelScrolled){
