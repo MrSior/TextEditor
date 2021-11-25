@@ -24,6 +24,22 @@ SFML/Graphics.hpp
 ChangeSymbolModel.h
 /Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolModel.h
 
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsController.h
+CollapseBracketsModel.h
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.h
+CollapseBracketsRender.h
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.h
+
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.h
+string
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/string
+
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.h
+SFML/Graphics.hpp
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/SFML/Graphics.hpp
+CollapseBracketsModel.h
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.h
+
 /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.h
 CommandsMenuRender.h
 /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuRender.h
@@ -247,6 +263,12 @@ CommandsMenu/CommandsMenuRender.h
 /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuRender.h
 CommandsMenu/CommandsMenuController.h
 /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.h
+CollapseBrackets/CollapseBracketsModel.h
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.h
+CollapseBrackets/CollapseBracketsRender.h
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.h
+CollapseBrackets/CollapseBracketsController.h
+/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsController.h
 iostream
 /Users/simonchubenko/Documents/C++/TextEditor/iostream
 cmath

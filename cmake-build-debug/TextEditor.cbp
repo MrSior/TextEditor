@@ -106,6 +106,24 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

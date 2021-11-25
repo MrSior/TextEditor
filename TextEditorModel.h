@@ -38,7 +38,7 @@ public:
     int getLineCount();
     void changeMaxSymbolsInLine(int new_width);
     void resetLines(bool isWindowSmaller, int prev_max_symbols_in_line);
-    void collapseBrackets();
+    void collapseBrackets(int line);
     void contextualReplacement(std::string fromString, std::string toString);
     void ChangeSymbol(int line, int pos, char value);
     void EraseZeroes();

@@ -142,7 +142,7 @@ void TextEditorModel::lineBreak() {
                                   linesText[current_line].length() - current_cursor_position + 1);
     InsertLine(current_line + 1, substr);
     current_line++;
-    //current_cursor_position = substr.length();
+    //current_cursor_position = substr.line();
     current_cursor_position = 0;
 }
 
@@ -237,28 +237,28 @@ std::string TextEditorModel::getFileName() {
     return file_name;
 }
 
-void TextEditorModel::collapseBrackets() {
-    for (int j = 0; j < linesText.size(); j++) {
-        std::string &str = linesText[j];
-        bool isBracketFound = false;
-        for (int i = 0; i < str.length(); ++i) {
-            if (str[i] == '{') {
-                isBracketFound = true;
-            } else if (str[i] == '}') {
-                isBracketFound = false;
-                if (j == current_line && current_cursor_position >= i) {
-                    current_cursor_position--;
-                }
-                str.erase(str.begin() + i);
+void TextEditorModel::collapseBrackets(int line) {
+    if (line < 0 || line >= linesText.size()) return;
+    int j = line;
+    std::string &str = linesText[j];
+    bool isBracketFound = false;
+    for (int i = 0; i < str.length(); ++i) {
+        if (str[i] == '{') {
+            isBracketFound = true;
+        } else if (str[i] == '}') {
+            isBracketFound = false;
+            if (j == current_line && current_cursor_position >= i) {
+                current_cursor_position--;
             }
+            str.erase(str.begin() + i);
+        }
 
-            if (isBracketFound) {
-                if (j == current_line && current_cursor_position >= i) {
-                    current_cursor_position--;
-                }
-                str.erase(str.begin() + i);
-                i--;
+        if (isBracketFound) {
+            if (j == current_line && current_cursor_position >= i) {
+                current_cursor_position--;
             }
+            str.erase(str.begin() + i);
+            i--;
         }
     }
 }

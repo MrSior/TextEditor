@@ -518,6 +518,45 @@ CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.cpp -o CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.s
 
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.o: ../CollapseBrackets/CollapseBracketsModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.cpp
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.cpp > CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.i
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsModel.cpp -o CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.s
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.o: ../CollapseBrackets/CollapseBracketsRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.cpp
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.cpp > CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.i
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsRender.cpp -o CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.s
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.o: ../CollapseBrackets/CollapseBracketsController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsController.cpp
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsController.cpp > CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.i
+
+CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/CollapseBrackets/CollapseBracketsController.cpp -o CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.s
+
 # Object files for target TextEditor
 TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/main.cpp.o" \
@@ -553,7 +592,10 @@ TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.o" \
 "CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o" \
 "CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o" \
-"CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o"
+"CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o" \
+"CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.o" \
+"CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.o" \
+"CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.o"
 
 # External object files for target TextEditor
 TextEditor_EXTERNAL_OBJECTS =
@@ -592,6 +634,9 @@ TextEditor: CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cp
 TextEditor: CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/build.make
 TextEditor: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 TextEditor: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
@@ -600,7 +645,7 @@ TextEditor: /usr/local/lib/libboost_system-mt.dylib
 TextEditor: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 TextEditor: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 TextEditor: CMakeFiles/TextEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable TextEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable TextEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TextEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

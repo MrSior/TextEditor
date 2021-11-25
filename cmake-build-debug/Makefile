@@ -223,6 +223,87 @@ ChangeSymbolMenu/ChangeSymbolRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.s
 .PHONY : ChangeSymbolMenu/ChangeSymbolRender.cpp.s
 
+CollapseBrackets/CollapseBracketsController.o: CollapseBrackets/CollapseBracketsController.cpp.o
+
+.PHONY : CollapseBrackets/CollapseBracketsController.o
+
+# target to build an object file
+CollapseBrackets/CollapseBracketsController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.o
+.PHONY : CollapseBrackets/CollapseBracketsController.cpp.o
+
+CollapseBrackets/CollapseBracketsController.i: CollapseBrackets/CollapseBracketsController.cpp.i
+
+.PHONY : CollapseBrackets/CollapseBracketsController.i
+
+# target to preprocess a source file
+CollapseBrackets/CollapseBracketsController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.i
+.PHONY : CollapseBrackets/CollapseBracketsController.cpp.i
+
+CollapseBrackets/CollapseBracketsController.s: CollapseBrackets/CollapseBracketsController.cpp.s
+
+.PHONY : CollapseBrackets/CollapseBracketsController.s
+
+# target to generate assembly for a file
+CollapseBrackets/CollapseBracketsController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsController.cpp.s
+.PHONY : CollapseBrackets/CollapseBracketsController.cpp.s
+
+CollapseBrackets/CollapseBracketsModel.o: CollapseBrackets/CollapseBracketsModel.cpp.o
+
+.PHONY : CollapseBrackets/CollapseBracketsModel.o
+
+# target to build an object file
+CollapseBrackets/CollapseBracketsModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.o
+.PHONY : CollapseBrackets/CollapseBracketsModel.cpp.o
+
+CollapseBrackets/CollapseBracketsModel.i: CollapseBrackets/CollapseBracketsModel.cpp.i
+
+.PHONY : CollapseBrackets/CollapseBracketsModel.i
+
+# target to preprocess a source file
+CollapseBrackets/CollapseBracketsModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.i
+.PHONY : CollapseBrackets/CollapseBracketsModel.cpp.i
+
+CollapseBrackets/CollapseBracketsModel.s: CollapseBrackets/CollapseBracketsModel.cpp.s
+
+.PHONY : CollapseBrackets/CollapseBracketsModel.s
+
+# target to generate assembly for a file
+CollapseBrackets/CollapseBracketsModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsModel.cpp.s
+.PHONY : CollapseBrackets/CollapseBracketsModel.cpp.s
+
+CollapseBrackets/CollapseBracketsRender.o: CollapseBrackets/CollapseBracketsRender.cpp.o
+
+.PHONY : CollapseBrackets/CollapseBracketsRender.o
+
+# target to build an object file
+CollapseBrackets/CollapseBracketsRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.o
+.PHONY : CollapseBrackets/CollapseBracketsRender.cpp.o
+
+CollapseBrackets/CollapseBracketsRender.i: CollapseBrackets/CollapseBracketsRender.cpp.i
+
+.PHONY : CollapseBrackets/CollapseBracketsRender.i
+
+# target to preprocess a source file
+CollapseBrackets/CollapseBracketsRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.i
+.PHONY : CollapseBrackets/CollapseBracketsRender.cpp.i
+
+CollapseBrackets/CollapseBracketsRender.s: CollapseBrackets/CollapseBracketsRender.cpp.s
+
+.PHONY : CollapseBrackets/CollapseBracketsRender.s
+
+# target to generate assembly for a file
+CollapseBrackets/CollapseBracketsRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CollapseBrackets/CollapseBracketsRender.cpp.s
+.PHONY : CollapseBrackets/CollapseBracketsRender.cpp.s
+
 CommandsMenu/CommandsMenuController.o: CommandsMenu/CommandsMenuController.cpp.o
 
 .PHONY : CommandsMenu/CommandsMenuController.o
@@ -1078,6 +1159,15 @@ help:
 	@echo "... ChangeSymbolMenu/ChangeSymbolRender.o"
 	@echo "... ChangeSymbolMenu/ChangeSymbolRender.i"
 	@echo "... ChangeSymbolMenu/ChangeSymbolRender.s"
+	@echo "... CollapseBrackets/CollapseBracketsController.o"
+	@echo "... CollapseBrackets/CollapseBracketsController.i"
+	@echo "... CollapseBrackets/CollapseBracketsController.s"
+	@echo "... CollapseBrackets/CollapseBracketsModel.o"
+	@echo "... CollapseBrackets/CollapseBracketsModel.i"
+	@echo "... CollapseBrackets/CollapseBracketsModel.s"
+	@echo "... CollapseBrackets/CollapseBracketsRender.o"
+	@echo "... CollapseBrackets/CollapseBracketsRender.i"
+	@echo "... CollapseBrackets/CollapseBracketsRender.s"
 	@echo "... CommandsMenu/CommandsMenuController.o"
 	@echo "... CommandsMenu/CommandsMenuController.i"
 	@echo "... CommandsMenu/CommandsMenuController.s"

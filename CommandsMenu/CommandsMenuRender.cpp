@@ -10,7 +10,7 @@ CommandsMenuRender::CommandsMenuRender(CommandsMenuModel *model) {
 }
 
 void CommandsMenuRender::Init() {
-    window_x = 1000;
+    window_x = 1050;
     window_y = 450;
     m_window.create(sf::VideoMode(window_x, window_y), "Text Editor", sf::Style::Close | sf::Style::Titlebar);
     //font.loadFromFile("/System/Library/Fonts/Supplemental/Courier New.ttf");

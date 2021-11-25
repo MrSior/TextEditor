@@ -34,6 +34,9 @@
 #include "CommandsMenu/CommandsMenuModel.h"
 #include "CommandsMenu/CommandsMenuRender.h"
 #include "CommandsMenu/CommandsMenuController.h"
+#include "CollapseBrackets/CollapseBracketsModel.h"
+#include "CollapseBrackets/CollapseBracketsRender.h"
+#include "CollapseBrackets/CollapseBracketsController.h"
 #include "iostream"
 #include "cmath"
 
@@ -95,7 +98,13 @@ void TextEditorController::Run() {
                     }
                     if (event.key.code == sf::Keyboard::D){
                         is_command_pressed = false;
-                        m_model->collapseBrackets();
+                        CollapseBracketsModel model;
+                        CollapseBracketsRender render(&model);
+                        CollapseBracketsController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsChosen()){
+                            m_model->collapseBrackets(model.getLine() - 1);
+                        }
                     }
                     if (event.key.code == sf::Keyboard::S){
                         is_command_pressed = false;
@@ -154,7 +163,7 @@ void TextEditorController::Run() {
                         InsertLineMenuController controller(&model, &render);
                         controller.Run();
                         if (model.getIsInsert()) {
-                            m_model->InsertLine(model.getPosToInsert() - 1, model.getStringToInsert());
+                            m_model->InsertLine(model.getPosToInsert(), model.getStringToInsert());
                         }
                     }
                     if (event.key.code == sf::Keyboard::U){
@@ -165,7 +174,7 @@ void TextEditorController::Run() {
                         controller.Run();
                         if (model.getIsInsert()) {
                             for (int i = 0; i < model.getNInserts(); ++i) {
-                                m_model->InsertLine(model.getPosToInsert() - 1 + i, model.getStringToInsert());
+                                m_model->InsertLine(model.getPosToInsert() + i, model.getStringToInsert());
                             }
                         }
                     }

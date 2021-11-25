@@ -76,7 +76,7 @@ void TextEditorRender::draw(sf::RenderTarget &target, sf::RenderStates states) c
     int length = numbersInNum(m_model->getLineCount() + 1);
 
     sf::Text lineNumber = sf::Text(std::to_string(1) + ".", font, 35);
-//    lineNumber.setPosition(10 + (length - 1) * 22, 0);
+//    lineNumber.setPosition(10 + (line - 1) * 22, 0);
 //    lineNumber.setStyle(sf::Text::Bold);
 //    lineNumber.setFillColor(sf::Color::White);
 //    target.draw(lineNumber);

@@ -11,16 +11,16 @@ CommandsMenuModel::CommandsMenuModel() {
 void CommandsMenuModel::Init() {
     current_line = 0;
     is_command_chosen = false;
-    commands.emplace_back("Delete the contents in curly brackets", sf::Keyboard::D);
-    commands.emplace_back("Contextual replacementModel", sf::Keyboard::K);
-    commands.emplace_back("Insert line", sf::Keyboard::I);
-    commands.emplace_back("Insert lines", sf::Keyboard::U);
-    commands.emplace_back("Erase line", sf::Keyboard::R);
-    commands.emplace_back("Insert substring", sf::Keyboard::B);
-    commands.emplace_back("Change symbol", sf::Keyboard::T);
-    commands.emplace_back("Erase zeroes", sf::Keyboard::Num0);
-    commands.emplace_back("Erase non-increasing sequence", sf::Keyboard::Comma);
-    commands.emplace_back("Erase stars", sf::Keyboard::Num8);
+    commands.emplace_back("Delete the contents in curly brackets (cmd + D)", sf::Keyboard::D);
+    commands.emplace_back("Contextual replacementModel (cmd + K)", sf::Keyboard::K);
+    commands.emplace_back("Insert line (cmd + I)", sf::Keyboard::I);
+    commands.emplace_back("Insert lines (cmd + U)", sf::Keyboard::U);
+    commands.emplace_back("Erase line (cmd + R)", sf::Keyboard::R);
+    commands.emplace_back("Insert substring (cmd + B)", sf::Keyboard::B);
+    commands.emplace_back("Change symbol (cmd + T)", sf::Keyboard::T);
+    commands.emplace_back("Erase zeroes (cmd + 0)", sf::Keyboard::Num0);
+    commands.emplace_back("Erase non-increasing sequence (cmd + ,)", sf::Keyboard::Comma);
+    commands.emplace_back("Erase stars (cmd + 8)", sf::Keyboard::Num8);
 }
 
 sf::Keyboard::Key CommandsMenuModel::getKeyCode() {
