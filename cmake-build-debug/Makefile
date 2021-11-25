@@ -223,6 +223,87 @@ ChangeSymbolMenu/ChangeSymbolRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolRender.cpp.s
 .PHONY : ChangeSymbolMenu/ChangeSymbolRender.cpp.s
 
+CommandsMenu/CommandsMenuController.o: CommandsMenu/CommandsMenuController.cpp.o
+
+.PHONY : CommandsMenu/CommandsMenuController.o
+
+# target to build an object file
+CommandsMenu/CommandsMenuController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o
+.PHONY : CommandsMenu/CommandsMenuController.cpp.o
+
+CommandsMenu/CommandsMenuController.i: CommandsMenu/CommandsMenuController.cpp.i
+
+.PHONY : CommandsMenu/CommandsMenuController.i
+
+# target to preprocess a source file
+CommandsMenu/CommandsMenuController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.i
+.PHONY : CommandsMenu/CommandsMenuController.cpp.i
+
+CommandsMenu/CommandsMenuController.s: CommandsMenu/CommandsMenuController.cpp.s
+
+.PHONY : CommandsMenu/CommandsMenuController.s
+
+# target to generate assembly for a file
+CommandsMenu/CommandsMenuController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.s
+.PHONY : CommandsMenu/CommandsMenuController.cpp.s
+
+CommandsMenu/CommandsMenuModel.o: CommandsMenu/CommandsMenuModel.cpp.o
+
+.PHONY : CommandsMenu/CommandsMenuModel.o
+
+# target to build an object file
+CommandsMenu/CommandsMenuModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o
+.PHONY : CommandsMenu/CommandsMenuModel.cpp.o
+
+CommandsMenu/CommandsMenuModel.i: CommandsMenu/CommandsMenuModel.cpp.i
+
+.PHONY : CommandsMenu/CommandsMenuModel.i
+
+# target to preprocess a source file
+CommandsMenu/CommandsMenuModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.i
+.PHONY : CommandsMenu/CommandsMenuModel.cpp.i
+
+CommandsMenu/CommandsMenuModel.s: CommandsMenu/CommandsMenuModel.cpp.s
+
+.PHONY : CommandsMenu/CommandsMenuModel.s
+
+# target to generate assembly for a file
+CommandsMenu/CommandsMenuModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.s
+.PHONY : CommandsMenu/CommandsMenuModel.cpp.s
+
+CommandsMenu/CommandsMenuRender.o: CommandsMenu/CommandsMenuRender.cpp.o
+
+.PHONY : CommandsMenu/CommandsMenuRender.o
+
+# target to build an object file
+CommandsMenu/CommandsMenuRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o
+.PHONY : CommandsMenu/CommandsMenuRender.cpp.o
+
+CommandsMenu/CommandsMenuRender.i: CommandsMenu/CommandsMenuRender.cpp.i
+
+.PHONY : CommandsMenu/CommandsMenuRender.i
+
+# target to preprocess a source file
+CommandsMenu/CommandsMenuRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.i
+.PHONY : CommandsMenu/CommandsMenuRender.cpp.i
+
+CommandsMenu/CommandsMenuRender.s: CommandsMenu/CommandsMenuRender.cpp.s
+
+.PHONY : CommandsMenu/CommandsMenuRender.s
+
+# target to generate assembly for a file
+CommandsMenu/CommandsMenuRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.s
+.PHONY : CommandsMenu/CommandsMenuRender.cpp.s
+
 ContextualReplacementMenu/ContextualReplacementController.o: ContextualReplacementMenu/ContextualReplacementController.cpp.o
 
 .PHONY : ContextualReplacementMenu/ContextualReplacementController.o
@@ -997,6 +1078,15 @@ help:
 	@echo "... ChangeSymbolMenu/ChangeSymbolRender.o"
 	@echo "... ChangeSymbolMenu/ChangeSymbolRender.i"
 	@echo "... ChangeSymbolMenu/ChangeSymbolRender.s"
+	@echo "... CommandsMenu/CommandsMenuController.o"
+	@echo "... CommandsMenu/CommandsMenuController.i"
+	@echo "... CommandsMenu/CommandsMenuController.s"
+	@echo "... CommandsMenu/CommandsMenuModel.o"
+	@echo "... CommandsMenu/CommandsMenuModel.i"
+	@echo "... CommandsMenu/CommandsMenuModel.s"
+	@echo "... CommandsMenu/CommandsMenuRender.o"
+	@echo "... CommandsMenu/CommandsMenuRender.i"
+	@echo "... CommandsMenu/CommandsMenuRender.s"
 	@echo "... ContextualReplacementMenu/ContextualReplacementController.o"
 	@echo "... ContextualReplacementMenu/ContextualReplacementController.i"
 	@echo "... ContextualReplacementMenu/ContextualReplacementController.s"

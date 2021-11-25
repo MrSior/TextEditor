@@ -31,6 +31,9 @@
 #include "EraseStarsMenu/EraseStarsMenuController.h"
 #include "EraseStarsMenu/EraseStarsMenuRender.h"
 #include "EraseStarsMenu/EraseStarsMenuModel.h"
+#include "CommandsMenu/CommandsMenuModel.h"
+#include "CommandsMenu/CommandsMenuRender.h"
+#include "CommandsMenu/CommandsMenuController.h"
 #include "iostream"
 #include "cmath"
 
@@ -81,6 +84,15 @@ void TextEditorController::Run() {
                 }
 
                 if (is_command_pressed){
+                    if (event.key.code == sf::Keyboard::E){
+                        CommandsMenuModel model;
+                        CommandsMenuRender render(&model);
+                        CommandsMenuController controller (&model, &render);
+                        controller.Run();
+                        if (model.getIsCommandChosen()){
+                            event.key.code = model.getKeyCode();
+                        }
+                    }
                     if (event.key.code == sf::Keyboard::D){
                         is_command_pressed = false;
                         m_model->collapseBrackets();
@@ -157,7 +169,7 @@ void TextEditorController::Run() {
                             }
                         }
                     }
-                    if (event.key.code == sf::Keyboard::E){
+                    if (event.key.code == sf::Keyboard::R){
                         is_command_pressed = false;
                         EraseLineMenuModel model;
                         EraseLineMenuRender render(&model);

@@ -479,6 +479,45 @@ CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuController.cpp -o CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.s
 
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o: ../CommandsMenu/CommandsMenuModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuModel.cpp
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuModel.cpp > CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.i
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuModel.cpp -o CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.s
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o: ../CommandsMenu/CommandsMenuRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuRender.cpp
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuRender.cpp > CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.i
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuRender.cpp -o CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.s
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o: CMakeFiles/TextEditor.dir/flags.make
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o: ../CommandsMenu/CommandsMenuController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o -c /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.cpp
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.cpp > CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.i
+
+CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.cpp -o CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.s
+
 # Object files for target TextEditor
 TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/main.cpp.o" \
@@ -511,7 +550,10 @@ TextEditor_OBJECTS = \
 "CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cpp.o" \
 "CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuModel.cpp.o" \
 "CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuRender.cpp.o" \
-"CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.o"
+"CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.o" \
+"CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o" \
+"CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o" \
+"CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o"
 
 # External object files for target TextEditor
 TextEditor_EXTERNAL_OBJECTS =
@@ -547,6 +589,9 @@ TextEditor: CMakeFiles/TextEditor.dir/ChangeSymbolMenu/ChangeSymbolController.cp
 TextEditor: CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuModel.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuRender.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuController.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuModel.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuRender.cpp.o
+TextEditor: CMakeFiles/TextEditor.dir/CommandsMenu/CommandsMenuController.cpp.o
 TextEditor: CMakeFiles/TextEditor.dir/build.make
 TextEditor: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 TextEditor: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
@@ -555,7 +600,7 @@ TextEditor: /usr/local/lib/libboost_system-mt.dylib
 TextEditor: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 TextEditor: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 TextEditor: CMakeFiles/TextEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable TextEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/TextEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable TextEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TextEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

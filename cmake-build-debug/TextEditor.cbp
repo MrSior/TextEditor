@@ -106,6 +106,24 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ChangeSymbolMenu/ChangeSymbolRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/CommandsMenu/CommandsMenuRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/ContextualReplacementMenu/ContextualReplacementController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>
