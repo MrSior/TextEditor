@@ -222,13 +222,14 @@ void TextEditorController::Run() {
                     }
                     if (event.key.code == sf::Keyboard::Num8){
                         is_command_pressed = false;
-                        EraseStarsMenuModel model;
-                        EraseStarsMenuRender render(&model);
-                        EraseStarsMenuController controller(&model, &render);
-                        controller.Run();
-                        if (model.getIsChosen()){
-                            m_model->EraseStars(model.getLength());
-                        }
+                        m_model->EraseStars();
+//                        EraseStarsMenuModel model;
+//                        EraseStarsMenuRender render(&model);
+//                        EraseStarsMenuController controller(&model, &render);
+//                        controller.Run();
+//                        if (model.getIsChosen()){
+//                            m_model->EraseStars();
+//                        }
                     }
                 }
             }

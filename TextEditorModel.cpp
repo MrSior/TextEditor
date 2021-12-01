@@ -239,22 +239,25 @@ std::string TextEditorModel::getFileName() {
 
 void TextEditorModel::collapseBrackets(int line) {
     if (line < 0 || line >= linesText.size()) return;
-    int j = line;
-    std::string &str = linesText[j];
+    std::string &str = linesText[line];
     bool isBracketFound = false;
     for (int i = 0; i < str.length(); ++i) {
         if (str[i] == '{') {
             isBracketFound = true;
-        } else if (str[i] == '}') {
-            isBracketFound = false;
-            if (j == current_line && current_cursor_position >= i) {
+            if (line == current_line && current_cursor_position >= i) {
                 current_cursor_position--;
             }
             str.erase(str.begin() + i);
-        }
-
-        if (isBracketFound) {
-            if (j == current_line && current_cursor_position >= i) {
+            i--;
+        } else if (str[i] == '}') {
+            isBracketFound = false;
+            if (line == current_line && current_cursor_position >= i) {
+                current_cursor_position--;
+            }
+            str.erase(str.begin() + i);
+            i--;
+        } else if (isBracketFound) {
+            if (line == current_line && current_cursor_position >= i) {
                 current_cursor_position--;
             }
             str.erase(str.begin() + i);
@@ -273,8 +276,7 @@ void TextEditorModel::contextualReplacement(std::string fromString, std::string 
                 if (toString.length() > fromString.length()) {
                     i += toString.length() - fromString.length();
                 } else {
-                    i += fromString.length() - toString.length();
-                    i--;
+                    i -= fromString.length() - toString.length();
                 }
             }
             setCurrentCursorPosition(0);
@@ -309,28 +311,39 @@ void TextEditorModel::ChangeSymbol(int line, int pos, char value) {
 void TextEditorModel::EraseZeroes() {
     for (int j = 0; j < linesText.size(); ++j) {
         std::string &line = linesText[j];
-        int start_length = line.length();
-        int start_index = -1;
+        line.push_back('#');
+        bool isZeroes = false;
+        int start_index;
         int end_index;
         for (int i = 0; i < line.length(); ++i) {
-            if (line[i] == '0') {
-                if (start_index == -1) {
-                    start_index = i;
-                    end_index = i;
+            if (line[i] == '0'){
+                if (!isZeroes && i >= 1 && line[i - 1] != '0' && isdigit(line[i - 1])){
+                    while (i < line.length() && line[i] == '0'){
+                        i++;
+                    }
                 } else {
-                    end_index++;
+                    if (!isZeroes) {
+                        isZeroes = true;
+                        start_index = i;
+                        end_index = i;
+                    } else {
+                        end_index++;
+                    }
                 }
-            } else if (start_index != -1 && start_index != end_index) {
-                line.erase(start_index, end_index - start_index);
-                start_index = -1;
-            } else {
-                start_index = -1;
+            } else if (isdigit(line[i]) && isZeroes){
+                end_index++;
+                int length = end_index - start_index;
+                line.erase(start_index, length);
+                i -= length;
+                isZeroes = false;
+            } else if (isZeroes){
+                int length = end_index - start_index;
+                line.erase(start_index, length);
+                i -= length;
+                isZeroes = false;
             }
         }
-        if (start_index != -1 && start_index != end_index) {
-            line.erase(start_index, end_index - start_index);
-            start_index = -1;
-        }
+        line.pop_back();
         if (j == getCurrentLine()) {
             setCurrentCursorPosition(0);
         }
@@ -341,18 +354,28 @@ void TextEditorModel::EraseNonIncreasingSequence() {
     for (int j = 0; j < linesText.size(); ++j) {
         std::string &line = linesText[j];
         char prevSymbol = '#';
+        int startIndex;
         for (int i = 0; i < line.length(); ++i) {
             if (isdigit(line[i])) {
                 if (prevSymbol == '#') {
                     prevSymbol = line[i];
+                    startIndex = i;
                 } else {
                     if (line[i] <= prevSymbol) {
-                        line.erase(i, 1);
-                        i--;
+                        while (i >= startIndex){
+                            line.erase(i, 1);
+                            i--;
+                        }
+                        while (i < line.length() && isdigit(line[i])){
+                            line.erase(i, 1);
+                        }
+                        prevSymbol = '#';
                     } else {
                         prevSymbol = line[i];
                     }
                 }
+            } else{
+                prevSymbol = '#';
             }
         }
         if (j == getCurrentLine()) {
@@ -361,23 +384,42 @@ void TextEditorModel::EraseNonIncreasingSequence() {
     }
 }
 
-void TextEditorModel::EraseStars(int length) {
-    if (length == 1) return;
-    std::string str;
-    std::string str_to_insert;
-    for (int i = 0; i < length; ++i) {
-        str.push_back('*');
-        if (i < length / 2){
-            str_to_insert.push_back('*');
-        }
-    }
+void TextEditorModel::EraseStars() {
+    std::string str = "**";
+    std::string str_to_insert = "+";
     for (int i = 0; i < linesText.size(); ++i) {
         std::string& line = linesText[i];
-        auto itr = line.find(str);
-        while (itr != std::string::npos){
-            line.erase(itr, length);
-            line.insert(itr, str_to_insert);
-            itr = line.find(str);
+        bool is_substr = false;
+        int start_index, end_index;
+        for (int j = 0; j < line.length(); ++j) {
+            if (j < line.length() - 1 && line[j] == '*' && line[j + 1] == '*'){
+                if (!is_substr){
+                    is_substr = true;
+                    start_index = j;
+                    end_index = j;
+                    continue;
+                }
+            }
+            if (is_substr && line[j] == '*'){
+                end_index++;
+            } else if (line[j] != '*' && is_substr){
+                line.erase(start_index, end_index - start_index + 1);
+                j -= end_index - start_index + 1;
+                str_to_insert.clear();
+                for (int k = 0; k < (end_index - start_index + 1) / 2; ++k) {
+                    str_to_insert.push_back('+');
+                }
+                line.insert(start_index, str_to_insert);
+                is_substr = false;
+            }
+        }
+        if (is_substr){
+            line.erase(start_index, end_index - start_index + 1);
+            str_to_insert.clear();
+            for (int k = 0; k < (end_index - start_index + 1) / 2; ++k) {
+                str_to_insert.push_back('+');
+            }
+            line.insert(start_index, str_to_insert);
         }
         if(i == getCurrentLine()){
             setCurrentCursorPosition(0);
