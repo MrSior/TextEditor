@@ -628,6 +628,87 @@ EraseStarsMenu/EraseStarsMenuRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseStarsMenu/EraseStarsMenuRender.cpp.s
 .PHONY : EraseStarsMenu/EraseStarsMenuRender.cpp.s
 
+EraseZeroes/EraseZeroesController.o: EraseZeroes/EraseZeroesController.cpp.o
+
+.PHONY : EraseZeroes/EraseZeroesController.o
+
+# target to build an object file
+EraseZeroes/EraseZeroesController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesController.cpp.o
+.PHONY : EraseZeroes/EraseZeroesController.cpp.o
+
+EraseZeroes/EraseZeroesController.i: EraseZeroes/EraseZeroesController.cpp.i
+
+.PHONY : EraseZeroes/EraseZeroesController.i
+
+# target to preprocess a source file
+EraseZeroes/EraseZeroesController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesController.cpp.i
+.PHONY : EraseZeroes/EraseZeroesController.cpp.i
+
+EraseZeroes/EraseZeroesController.s: EraseZeroes/EraseZeroesController.cpp.s
+
+.PHONY : EraseZeroes/EraseZeroesController.s
+
+# target to generate assembly for a file
+EraseZeroes/EraseZeroesController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesController.cpp.s
+.PHONY : EraseZeroes/EraseZeroesController.cpp.s
+
+EraseZeroes/EraseZeroesModel.o: EraseZeroes/EraseZeroesModel.cpp.o
+
+.PHONY : EraseZeroes/EraseZeroesModel.o
+
+# target to build an object file
+EraseZeroes/EraseZeroesModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesModel.cpp.o
+.PHONY : EraseZeroes/EraseZeroesModel.cpp.o
+
+EraseZeroes/EraseZeroesModel.i: EraseZeroes/EraseZeroesModel.cpp.i
+
+.PHONY : EraseZeroes/EraseZeroesModel.i
+
+# target to preprocess a source file
+EraseZeroes/EraseZeroesModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesModel.cpp.i
+.PHONY : EraseZeroes/EraseZeroesModel.cpp.i
+
+EraseZeroes/EraseZeroesModel.s: EraseZeroes/EraseZeroesModel.cpp.s
+
+.PHONY : EraseZeroes/EraseZeroesModel.s
+
+# target to generate assembly for a file
+EraseZeroes/EraseZeroesModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesModel.cpp.s
+.PHONY : EraseZeroes/EraseZeroesModel.cpp.s
+
+EraseZeroes/EraseZeroesRender.o: EraseZeroes/EraseZeroesRender.cpp.o
+
+.PHONY : EraseZeroes/EraseZeroesRender.o
+
+# target to build an object file
+EraseZeroes/EraseZeroesRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesRender.cpp.o
+.PHONY : EraseZeroes/EraseZeroesRender.cpp.o
+
+EraseZeroes/EraseZeroesRender.i: EraseZeroes/EraseZeroesRender.cpp.i
+
+.PHONY : EraseZeroes/EraseZeroesRender.i
+
+# target to preprocess a source file
+EraseZeroes/EraseZeroesRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesRender.cpp.i
+.PHONY : EraseZeroes/EraseZeroesRender.cpp.i
+
+EraseZeroes/EraseZeroesRender.s: EraseZeroes/EraseZeroesRender.cpp.s
+
+.PHONY : EraseZeroes/EraseZeroesRender.s
+
+# target to generate assembly for a file
+EraseZeroes/EraseZeroesRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/EraseZeroes/EraseZeroesRender.cpp.s
+.PHONY : EraseZeroes/EraseZeroesRender.cpp.s
+
 Finder/FinderController.o: Finder/FinderController.cpp.o
 
 .PHONY : Finder/FinderController.o
@@ -1204,6 +1285,15 @@ help:
 	@echo "... EraseStarsMenu/EraseStarsMenuRender.o"
 	@echo "... EraseStarsMenu/EraseStarsMenuRender.i"
 	@echo "... EraseStarsMenu/EraseStarsMenuRender.s"
+	@echo "... EraseZeroes/EraseZeroesController.o"
+	@echo "... EraseZeroes/EraseZeroesController.i"
+	@echo "... EraseZeroes/EraseZeroesController.s"
+	@echo "... EraseZeroes/EraseZeroesModel.o"
+	@echo "... EraseZeroes/EraseZeroesModel.i"
+	@echo "... EraseZeroes/EraseZeroesModel.s"
+	@echo "... EraseZeroes/EraseZeroesRender.o"
+	@echo "... EraseZeroes/EraseZeroesRender.i"
+	@echo "... EraseZeroes/EraseZeroesRender.s"
 	@echo "... Finder/FinderController.o"
 	@echo "... Finder/FinderController.i"
 	@echo "... Finder/FinderController.s"

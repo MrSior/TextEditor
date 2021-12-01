@@ -11,9 +11,12 @@ ContextualReplacementModel::ContextualReplacementModel() {
 void ContextualReplacementModel::init() {
     fromStringToString.emplace_back("");
     fromStringToString.emplace_back("");
+    fromStringToString.emplace_back("");
+    fromStringToString.emplace_back("");
     current_cursor_pos = 0;
     current_line = 0;
     max_symbols_in_line = 30;
+    is_chosen = false;
 }
 
 void ContextualReplacementModel::insertSymbol(char symbol) {
@@ -39,7 +42,7 @@ void ContextualReplacementModel::setCurrentCursorPosition(int pos) {
 }
 
 void ContextualReplacementModel::setCurrentLine(int pos) {
-    if (pos >= 0 && pos <= 1){
+    if (pos >= 0 && pos < fromStringToString.size()){
         current_line = pos;
         setCurrentCursorPosition(current_cursor_pos);
     }
@@ -59,5 +62,31 @@ std::string ContextualReplacementModel::getFromString() {
 
 std::string ContextualReplacementModel::getToString() {
     return fromStringToString[1];
+}
+
+std::string ContextualReplacementModel::getStartLineString() {
+    return fromStringToString[2];
+}
+
+std::string ContextualReplacementModel::getLastLineString() {
+    return fromStringToString[3];
+}
+
+void ContextualReplacementModel::setIsChosen(bool value) {
+    is_chosen = value;
+}
+
+bool ContextualReplacementModel::getIsChosen() {
+    return is_chosen;
+}
+
+int ContextualReplacementModel::getStartLine() {
+    if (getStartLineString().empty()) return 1;
+    return std::stoi(getStartLineString());
+}
+
+int ContextualReplacementModel::getLastLine() {
+    if (getLastLineString().empty()) return -1000;
+    return std::stoi(getLastLineString());
 }
 

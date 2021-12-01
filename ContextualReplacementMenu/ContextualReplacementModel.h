@@ -14,6 +14,7 @@ private:
     int current_cursor_pos;
     int current_line;
     int max_symbols_in_line;
+    bool is_chosen;
 public:
     ContextualReplacementModel();
     void init();
@@ -21,10 +22,16 @@ public:
     void eraseSymbol();
     void setCurrentCursorPosition(int pos);
     void setCurrentLine(int pos);
+    void setIsChosen(bool value);
+    bool getIsChosen();
     int getCurrentCursorPosition();
     int getCurrentLine();
     std::string getFromString();
     std::string getToString();
+    std::string getStartLineString();
+    std::string getLastLineString();
+    int getStartLine();
+    int getLastLine();
 };
 
 

@@ -266,8 +266,17 @@ void TextEditorModel::collapseBrackets(int line) {
     }
 }
 
-void TextEditorModel::contextualReplacement(std::string fromString, std::string toString) {
-    for (std::string &line : linesText) {
+void TextEditorModel::contextualReplacement(std::string fromString, std::string toString,
+                                            int startLine, int lastLine) {
+    if (startLine > lastLine || startLine > getLineCount() || lastLine > getLineCount()){
+        startLine = 1;
+        lastLine = getLineCount();
+    }
+    if (lastLine == -1000) {
+        lastLine = getLineCount();
+    }
+    for (int j = startLine - 1; j <= lastLine - 1; ++j) {
+        std::string& line = linesText[j];
         for (int i = 0; i < int(line.length()) - int(fromString.length()) + 1; ++i) {
             std::string str1 = line.substr(i, fromString.length());
             if (str1 == fromString) {
@@ -308,8 +317,9 @@ void TextEditorModel::ChangeSymbol(int line, int pos, char value) {
     linesText[line][pos] = value;
 }
 
-void TextEditorModel::EraseZeroes() {
-    for (int j = 0; j < linesText.size(); ++j) {
+void TextEditorModel::EraseZeroes(int startLine, int lastLine) {
+    if (startLine > getLineCount() || lastLine > getLineCount()) return;
+    for (int j = startLine - 1; j < lastLine; ++j) {
         std::string &line = linesText[j];
         line.push_back('#');
         bool isZeroes = false;

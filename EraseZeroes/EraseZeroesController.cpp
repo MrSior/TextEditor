@@ -1,16 +1,15 @@
 //
-// Created by Семён Чубенко on 06.11.2021.
+// Created by Семён Чубенко on 02.12.2021.
 //
 
-#include "ContextualReplacementController.h"
+#include "EraseZeroesController.h"
 
-ContextualReplacementController::ContextualReplacementController(ContextualReplacementModel *model,
-                                                                 ContextualReplacementRender *render) {
+EraseZeroesController::EraseZeroesController(EraseZeroesModel *model, EraseZeroesRender *render) {
     m_model = model;
     m_render = render;
 }
 
-void ContextualReplacementController::Run() {
+void EraseZeroesController::Run() {
     sf::Event event;
     bool isSystemKeyPressed = false;
     while (m_render->window().isOpen()) {
@@ -21,9 +20,9 @@ void ContextualReplacementController::Run() {
             if (event.type == sf::Event::KeyPressed){
                 if (event.key.code == sf::Keyboard::Enter){
                     isSystemKeyPressed = true;
-                    if (m_model->getCurrentLine() == 3) {
-                        if (!m_model->getToString().empty() && !m_model->getFromString().empty()){
-                            m_model->setIsChosen(true);
+                    if (m_model->getCurrentLine() == 1) {
+                        if (!m_model->getStringToInsert().empty() && !m_model->getPosToInsertString().empty()){
+                            m_model->setIsInsert(true);
                         }
                         m_render->window().close();
                     } else {
@@ -50,11 +49,11 @@ void ContextualReplacementController::Run() {
             }
             if (event.type == sf::Event::MouseButtonPressed){
                 if (event.mouseButton.button == sf::Mouse::Left){
-                    int chosen_symbol = 0;
+                    int chosen_symbol;
                     if (m_model->getCurrentLine() == 0) {
-                        chosen_symbol = (event.mouseButton.x - 142) / 22;
-                    } else if (m_model->getCurrentLine() == 1) {
-                        chosen_symbol = (event.mouseButton.x - 98) / 22;
+                        chosen_symbol = (event.mouseButton.x - 14 * 22 - 10) / 22;
+                    } else{
+                        chosen_symbol = (event.mouseButton.x - 13 * 22 - 10) / 22;
                     }
                     m_model->setCurrentLine(event.mouseButton.y / 45);
                     m_model->setCurrentCursorPosition(chosen_symbol);
@@ -62,11 +61,7 @@ void ContextualReplacementController::Run() {
             }
             if (event.type == sf::Event::TextEntered){
                 if (!isSystemKeyPressed) {
-                    if (m_model->getCurrentLine() == 2 || m_model->getCurrentLine() == 3){
-                        if (isdigit(char(event.text.unicode))){
-                            m_model->insertSymbol(char(event.text.unicode));
-                        }
-                    } else {
+                    if (isdigit(char(event.text.unicode))) {
                         m_model->insertSymbol(char(event.text.unicode));
                     }
                 } else{

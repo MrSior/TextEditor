@@ -37,6 +37,9 @@
 #include "CollapseBrackets/CollapseBracketsModel.h"
 #include "CollapseBrackets/CollapseBracketsRender.h"
 #include "CollapseBrackets/CollapseBracketsController.h"
+#include "EraseZeroes/EraseZeroesModel.h"
+#include "EraseZeroes/EraseZeroesRender.h"
+#include "EraseZeroes/EraseZeroesController.h"
 #include "iostream"
 #include "cmath"
 
@@ -152,8 +155,9 @@ void TextEditorController::Run() {
                         ContextualReplacementRender render(&model);
                         ContextualReplacementController controller(&model, &render);
                         controller.Run();
-                        if(!model.getToString().empty() && !model.getToString().empty()) {
-                            m_model->contextualReplacement(model.getFromString(), model.getToString());
+                        if(model.getIsChosen()) {
+                            m_model->contextualReplacement(model.getFromString(), model.getToString(),
+                                                           model.getStartLine(), model.getLastLine());
                         }
                     }
                     if (event.key.code == sf::Keyboard::I){
@@ -214,7 +218,13 @@ void TextEditorController::Run() {
                     }
                     if (event.key.code == sf::Keyboard::Num0){
                         is_command_pressed = false;
-                        m_model->EraseZeroes();
+                        EraseZeroesModel model;
+                        EraseZeroesRender render(&model);
+                        EraseZeroesController controller(&model, &render);
+                        controller.Run();
+                        if (model.getIsInsert()) {
+                            m_model->EraseZeroes(model.getStartLine(), model.getLastLine());
+                        }
                     }
                     if (event.key.code == sf::Keyboard::Comma){
                         is_command_pressed = false;
@@ -278,7 +288,6 @@ void TextEditorController::Run() {
                 m_render->setY_scrolled(m_render->getY_scrolled() - (windowSize.y - m_render->getWindowSize().y));
             }
             if (event.type == sf::Event::TextEntered){
-                //std::cout << char(event.text.unicode) <<'\n';
                 if (!isSystemKeyPressed) {
                     m_model->insertSymbol(char(event.text.unicode));
                 } else{

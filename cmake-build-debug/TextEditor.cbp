@@ -196,6 +196,24 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseStarsMenu/EraseStarsMenuRender.h">
 			<Option target="TextEditor"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseZeroes/EraseZeroesController.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseZeroes/EraseZeroesController.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseZeroes/EraseZeroesModel.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseZeroes/EraseZeroesModel.h">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseZeroes/EraseZeroesRender.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/EraseZeroes/EraseZeroesRender.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/TextEditor/Finder/FinderController.cpp">
 			<Option target="TextEditor"/>
 		</Unit>
